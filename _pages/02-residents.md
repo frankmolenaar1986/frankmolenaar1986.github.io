@@ -1,6 +1,7 @@
 ---
 title: residents
 layout: default
+permalink: /residents.html
 ---
 <div class="row">	
 	<div class="col-md-6">
