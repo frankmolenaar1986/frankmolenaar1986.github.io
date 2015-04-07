@@ -51,6 +51,10 @@ div.page-content {
 	margin: 35px;
 }
 
+a:hover, a:visited {
+	color: white;
+}
+
 .artist-image {
 	float: left; 
 	width: 100%;
