@@ -3,8 +3,6 @@ title: KruXXX
 email: your-email@domain.com
 description: > 
   Dit is de website voor Cruquius artist collective
-baseurl: "/" # the subpath of your site, e.g. /blog/
-url: "http://krux.nl" # the base hostname & protocol for your site
 twitter_username: jekyllrb
 github_username:  jekyll
 
