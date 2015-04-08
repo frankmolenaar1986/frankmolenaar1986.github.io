@@ -1,0 +1,63 @@
+@font-face {
+	font-family: ReplicaProRegular;
+	src: url("fonts/ReplicaProRegular.otf") format("opentype");
+}
+
+@font-face {
+	font-family: ReplicaProBold;
+	font-weight: bold;
+	src: url("fonts/ReplicaProBold.otf") format("opentype");
+}
+
+@font-face {
+	font-family: ReplicaProLight;
+	font-weight: lighter;
+	src: url("fonts/ReplicaProLight.otf") format("opentype");
+}
+
+html {
+	font-family: "ReplicaProRegular", 'Arial Black', 'Arial Bold', Gadget, sans-serif;
+}
+
+body {
+	font-family: "ReplicaProRegular", 'Arial Black', 'Arial Bold', Gadget, sans-serif;
+	height:100%;
+	background: url({{background-image}}) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+span.krux-bold {
+	font-family: "ReplicaProBold", 'Arial Black', 'Arial Bold', Gadget, sans-serif;
+	font-weight: bolder;
+}
+
+div.page-content {
+	background-color: white;
+	color: white;
+	line-height: 24px;
+	background-color: #79C4D3;
+	padding: 20px;
+	font-size: 14px;
+	text-align: left;
+	margin-top: 130px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.post {
+	margin: 5%;
+}
+
+a:hover, a:visited {
+	color: white;
+}
+
+.artist-image {
+	float: left; 
+	width: 100%;
+	height: auto;
+	margin: 0 2.5% 2.5% 0;
+}
