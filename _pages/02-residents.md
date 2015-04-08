@@ -3,6 +3,15 @@ title: residents
 layout: default
 permalink: /residents.html
 ---
+<style>
+	body {
+		background: url("../images/IMG_8785.jpg") no-repeat center center fixed; 
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;		
+	}
+</style>
 <div class="row">	
 	<div class="col-md-6">
 		{% for post in site.posts %}
