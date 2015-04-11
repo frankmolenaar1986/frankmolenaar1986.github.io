@@ -1,5 +1,5 @@
 ---
 title: amsterdam
 layout: default
-background: "/images/KRUX07.jpg"
+background: "{{ site.baseurl }}images/KRUX07.jpg"
 ---
