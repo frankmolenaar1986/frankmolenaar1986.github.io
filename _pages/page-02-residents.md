@@ -10,7 +10,7 @@ background: "/images/IMG_8785.jpg"
 		<ul>				
 			{% for post in site.posts limit:cutoffathalf %}
 				<li>
-					<a href="{{post.url}}">{{ post.title }} <span class="list-subtitle">{{ post.profession }}</span></a>
+					<a href="{{ site.baseurl }}{{post.url}}">{{ post.title }} <span class="list-subtitle">{{ post.profession }}</span></a>
 				</li>
 			{% endfor %}
 		</ul>
@@ -19,7 +19,7 @@ background: "/images/IMG_8785.jpg"
 		<ul>
 			{% for post in site.posts offset:cutoffathalf %}
 				<li>
-					<a href="{{post.url}}">{{ post.title }} <span class="list-subtitle">{{ post.profession }}</span></a>
+					<a href="{{ site.baseurl }}{{post.url}}">{{ post.title }} <span class="list-subtitle">{{ post.profession }}</span></a>
 				</li>
 			{% endfor %}
 		</ul>
