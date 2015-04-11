@@ -3,6 +3,7 @@ description:      Krux is the best
 # Your site's domain goes here. Leave localhost server or blank when working locally.
 url:              
 disqus_shortname:
+baseurl: 		/krux-website/
 
 # Owner/author information
 owner:
