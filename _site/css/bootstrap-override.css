@@ -14,9 +14,11 @@ nav.navbar-default .navbar-nav > li > a {
 	background-color: black;
 	color: white;
 	font-family: "ReplicaProLight", 'Arial Black', 'Arial Bold', Gadget, sans-serif;
-	margin: 10px 20px 0px 0px;
-	padding:10px 15px;
-	font-size: 20px;	
+	margin: 15px;
+	padding: 5px 15px 0px 15px;
+	font-size: 2em;
+	line-height: 40px;	
+	border-bottom: 5px solid transparent;
 }
 
 nav.navbar-default .navbar-nav > li > a:hover {

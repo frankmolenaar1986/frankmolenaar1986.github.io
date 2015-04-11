@@ -1,10 +1,8 @@
 <!DOCTYPE html>
 <html>
-
   {% include head.html %}
-
-  <body>
-    <div class="container-fluid">
+  <body style="background: url({{ page.background }}) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;">
+    <div  class="container-fluid">
       {% include header.html %}
       <div class="row">
         <div class="col-md-6 col-md-offset-3">
@@ -13,9 +11,9 @@
           </div>
         </div>        
       </div>
-
       {% include footer.html %}
     </div>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.0/slick.min.js"></script>
   </body>
-
 </html>
