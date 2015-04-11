@@ -1,6 +1,6 @@
 ---
 title: info
 layout: default
-permalink: info.html
+permalink: /krux-website/info.html
 background: "/images/KRUX07.jpg"
 ---
