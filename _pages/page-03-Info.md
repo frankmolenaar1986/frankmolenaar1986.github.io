@@ -2,5 +2,5 @@
 title: info
 layout: default
 permalink: /info/
-background: "{{ site.baseurl }}images/KRUX07.jpg"
+background: "/images/KRUX07.jpg"
 ---

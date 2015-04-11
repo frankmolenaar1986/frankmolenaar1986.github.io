@@ -2,7 +2,7 @@
 title: residents
 layout: default
 permalink: /residents/
-background: "{{ site.baseurl }}images/IMG_8785.jpg"
+background: "/images/IMG_8785.jpg"
 ---
 {% assign cutoffathalf = site.categories.residents | size | divided_by:2 | plus:1 %}	
 <div class="row">	
