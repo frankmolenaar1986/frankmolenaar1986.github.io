@@ -48,10 +48,22 @@ div.page-content {
 	margin-right: 2em;
 }
 
-.page-content ul {
-	font-family: Helvetica, sans-serif;
+.residents {
+	font-family: "ReplicaProLight", Helvetica, sans-serif;
 	list-style: none;
 	padding-left: 0;
+	margin-top: 130px;
+	margin-left: auto;
+	margin-right: auto;  
+	font-weight: lighter;
+	height: 600px;
+	line-height: 28px;
+	padding: 10px;
+	font-size: 24px;
+}
+
+.residents ul {
+	list-style: none;
 }
 
 li a {
@@ -72,8 +84,11 @@ a:hover, a:visited {
 }
 
 .artist-image {
-	float: left; 
-	width: 100%;
 	height: auto;
-	margin: 0 2.5% 2.5% 0;
+	margin: 0 auto;
+}
+
+h2.center {
+	text-align: center;
+	color: white;
 }

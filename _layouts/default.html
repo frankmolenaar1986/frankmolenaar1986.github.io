@@ -1,19 +1,28 @@
 <!DOCTYPE html>
 <html>
   {% include head.html %}
-  <body style="background: url({{ site.baseurl }}{{ page.background }}) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;">
+  <body>
+    <div class="bgImageContainer" style="background: url({{ site.baseurl }}{{ page.background }}) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; z-index:0; position:absolute; width:100%; height:100%;">
+    </div>
     <div  class="container-fluid">
-      {% include header.html %}
-      <div class="row">
-        <div class="col-md-6 col-md-offset-3">
-          <div class="page-content">        
-            {{ content }}
-          </div>
-        </div>        
-      </div>
+      {% include header.html %}     
+      {{ content }}
       {% include footer.html %}
     </div>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.0/slick.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(".residents").slick({
+          slidesToShow: 1,
+          adaptiveHeight: true      
+        });
+        $(".residents-list a").on("click", function () {
+          for(var i = 0; i < $(this).attr("data-page"); i++) {
+            $(".slick-slider").slick("slickGoTo", $(this).attr("data-page"));
+          }
+        });
+      }); 
+    </script>
   </body>
 </html>

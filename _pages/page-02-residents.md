@@ -2,26 +2,24 @@
 title: residents
 layout: default
 permalink: /residents/
-background: "/images/IMG_8785.jpg"
+background: "/images/backgrounds/background-12.jpg"
 ---
-{% assign cutoffathalf = site.categories.residents | size | divided_by:2 | plus:1 %}	
-<div class="row">	
-	<div class="col-lg-6 col-md-12">
-		<ul>				
-			{% for post in site.posts limit:cutoffathalf %}
-				<li>
-					<a href="{{ site.baseurl }}{{post.url}}">{{ post.title }} <span class="list-subtitle">{{ post.profession }}</span></a>
-				</li>
+<div class="row">
+	<div class="col-md-10 col-md-offset-1">
+		<div class="residents">
+			{% for resident in site.posts reversed | sort:order %}
+				<div class="resident">
+					{% if resident.title != "index" and resident.image %}
+						<h2 class="center">{{ resident.title }}</h2>
+						<img src="{{ site.baseurl }}{{ resident.image }}" alt="{{ resident.title }}" class="artist-image img-responsive">
+					{% else %}
+						{{ resident.content }}			
+					{% endif %}
+					{% if resident.website %}
+						<a href="http://{{resident.website}}"><h2 class="center">{{ resident.website }}</h2></a>
+					{% endif %}
+				</div>	
 			{% endfor %}
-		</ul>
-	</div>
-	<div class="col-lg-6 col-md-12">	
-		<ul>
-			{% for post in site.posts offset:cutoffathalf %}
-				<li>
-					<a href="{{ site.baseurl }}{{post.url}}">{{ post.title }} <span class="list-subtitle">{{ post.profession }}</span></a>
-				</li>
-			{% endfor %}
-		</ul>
+		</div>
 	</div>
 </div>

@@ -1,6 +1,6 @@
 ---
-title: info
+title: facilities
 layout: default
-permalink: /info/
-background: "/images/KRUX07.jpg"
+permalink: /facilities/
+background: "/images/backgrounds/background-04.jpg"
 ---
