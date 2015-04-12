@@ -1,6 +1,7 @@
 ---
 title: residents
 layout: default
+layer: dark
 permalink: /residents/
 background: "/images/backgrounds/background-12.jpg"
 ---
