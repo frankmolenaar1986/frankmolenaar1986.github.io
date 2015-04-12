@@ -44,6 +44,11 @@ span.krux-bold {
 	font-weight: bolder;
 }
 
+span.krux-light {
+	font-family: "ReplicaProLight", 'Arial', Gadget, sans-serif;
+	font-weight: bolder;
+}
+
 div.page-content {
 	background-color: white;
 	color: white;
