@@ -11,7 +11,7 @@ background: "/images/backgrounds/background-12.jpg"
 				<div class="resident">
 					{% if resident.title != "index" and resident.image %}
 						<h2 class="center">{{ resident.title }}</h2>
-						<img src="{{ site.baseurl }}{{ resident.image }}" alt="{{ resident.title }}" class="artist-image img-responsive">
+						<img data-lazy="{{ site.baseurl }}{{ resident.image }}" alt="{{ resident.title }}" class="artist-image img-responsive">
 					{% else %}
 						{{ resident.content }}			
 					{% endif %}
