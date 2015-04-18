@@ -81,11 +81,6 @@ div.page-content {
 	list-style: none;
 }
 
-
-
-
-
-
 li a {
   text-decoration: none;
   color: white;
@@ -114,35 +109,24 @@ h2.center {
 	color: white;
 }
 
-
-
-
-#link-1{
-
-	color: #3221c8;
+/********************
+/* Custom menu css */
+nav.navbar-default .navbar-nav > li.menu-item-1 > a:hover {
+	border-color: blue;
 }
 
-#link-2{
-
-	color: #279375;
-}
-#link-3{
-
-	color: #ff2119;
-}
-#link-4{
-
-	color: #cfd000;
-}
-#link-5{
-
-	color: #b8c5c5;
+nav.navbar-default .navbar-nav > li.menu-item-2 > a:hover {
+	border-color: green;
 }
 
+nav.navbar-default .navbar-nav > li.menu-item-3 > a:hover {
+	border-color: yellow;
+}
 
+nav.navbar-default .navbar-nav > li.menu-item-4 > a:hover {
+	border-color: black;
+}
 
-
-
-
-
-
+nav.navbar-default .navbar-nav > li.menu-item-5 > a:hover {
+	border-color: purple;
+}

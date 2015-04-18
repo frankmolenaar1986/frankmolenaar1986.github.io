@@ -18,12 +18,13 @@
 html {
 	font-family: "ReplicaProRegular", 'Arial Black', 'Arial Bold', Gadget, sans-serif;
 	line-height: 24px;
-	font-size: 14px;
+	font-size: 12px;
 }
 
 body {
 	font-family: "ReplicaProRegular", 'Arial Black', 'Arial Bold', Gadget, sans-serif;
 	height:100%;
+	letter-spacing: 1px;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -41,12 +42,12 @@ body {
 
 span.krux-bold {
 	font-family: "ReplicaProBold", 'Arial Black', 'Arial Bold', Gadget, sans-serif;
-	font-weight: bolder;
+	font-weight: bold;
 }
 
 span.krux-light {
 	font-family: "ReplicaProLight", 'Arial', Gadget, sans-serif;
-	font-weight: bolder;
+	font-weight: lighter;
 }
 
 div.page-content {
@@ -69,7 +70,7 @@ div.page-content {
 	margin-top: 130px;
 	margin-left: auto;
 	margin-right: auto;  
-	font-weight: lighter;
+	
 	height: 600px;
 	line-height: 28px;
 	padding: 10px;
@@ -87,6 +88,7 @@ li a {
 
 .list-subtitle {
 	font-style: italic;
+	font-weight: lighter;
 }
 
 .post {
@@ -105,4 +107,26 @@ a:hover, a:visited {
 h2.center {
 	text-align: center;
 	color: white;
+}
+
+/********************
+/* Custom menu css */
+nav.navbar-default .navbar-nav > li.menu-item-1 > a:hover {
+	border-color: blue;
+}
+
+nav.navbar-default .navbar-nav > li.menu-item-2 > a:hover {
+	border-color: green;
+}
+
+nav.navbar-default .navbar-nav > li.menu-item-3 > a:hover {
+	border-color: yellow;
+}
+
+nav.navbar-default .navbar-nav > li.menu-item-4 > a:hover {
+	border-color: black;
+}
+
+nav.navbar-default .navbar-nav > li.menu-item-5 > a:hover {
+	border-color: purple;
 }
