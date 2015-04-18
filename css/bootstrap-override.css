@@ -35,4 +35,10 @@ nav.navbar-default .navbar-nav > li.active > a {
 
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
 color: black; 
-background-color: white;} 
+background-color: white;}
+
+
+.navbar-collapse {
+  padding-right: 0px;
+  padding-left: 0px;
+  } 
