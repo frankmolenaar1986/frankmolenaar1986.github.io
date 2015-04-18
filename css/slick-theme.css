@@ -200,3 +200,11 @@
     opacity: .75;
     color: black;
 }
+
+
+
+.slick-slide img
+{
+    display: block;
+    max-width: 800px;
+}
