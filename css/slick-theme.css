@@ -38,6 +38,7 @@
     border: none;
     outline: none;
     background: transparent;
+    background:url(./images/arrow_right.png) no-repeat;
 }
 .slick-prev:hover,
 .slick-prev:focus,
