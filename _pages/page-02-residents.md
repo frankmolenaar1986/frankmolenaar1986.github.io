@@ -1,5 +1,5 @@
 ---
-title: KruxResidents
+title: residents
 layout: default
 layer: dark
 permalink: /residents/
