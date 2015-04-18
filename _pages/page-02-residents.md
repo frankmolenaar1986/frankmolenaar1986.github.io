@@ -17,7 +17,7 @@ background: "/images/backgrounds/background-12.jpg"
 						{{ resident.content }}			
 					{% endif %}
 					{% if resident.website %}
-						<a href="http://{{resident.website}}"><h2 class="center">{{ resident.website }}</h2></a>
+						<a href="http://{{resident.website}}" target="blank"><h2 class="center">{{ resident.website }}</h2></a>
 					{% endif %}
 				</div>	
 			{% endfor %}
