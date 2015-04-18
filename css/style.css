@@ -112,21 +112,21 @@ h2.center {
 /********************
 /* Custom menu css */
 nav.navbar-default .navbar-nav > li.menu-item-1 > a:hover {
-	border-color: blue;
+	border-color: #3221c8;
 }
 
 nav.navbar-default .navbar-nav > li.menu-item-2 > a:hover {
-	border-color: green;
+	border-color: #279375;
 }
 
 nav.navbar-default .navbar-nav > li.menu-item-3 > a:hover {
-	border-color: yellow;
+	border-color: #ff2119;
 }
 
 nav.navbar-default .navbar-nav > li.menu-item-4 > a:hover {
-	border-color: black;
+	border-color: #cfd000;
 }
 
 nav.navbar-default .navbar-nav > li.menu-item-5 > a:hover {
-	border-color: purple;
+	border-color: #b8c5c5;
 }
