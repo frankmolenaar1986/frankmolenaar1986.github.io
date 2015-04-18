@@ -24,11 +24,15 @@ nav.navbar-default .navbar-nav > li > a {
 nav.navbar-default .navbar-nav > li > a:hover {
 	border-bottom: 5px solid #3C9;
 	background-color: white;
-	color:;
+	color:black;
 } 
 
 nav.navbar-default .navbar-nav > li.active > a {
 	border-bottom: 5px solid #F33;
 	background-color: white;
-	color: ;
+	color: black;
 }
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+color: black; 
+background-color: white;} 
