@@ -50,7 +50,7 @@
           </div>
           <div class="row">
             <div class="col-md-10 col-md-offset-1">
-              <div class="amsterdam">
+              <div class="facilities">
 
               </div>
             </div>
@@ -62,7 +62,7 @@
           </div>
           <div class="row">
             <div class="col-md-10 col-md-offset-1">
-              <div class="amsterdam">
+              <div class="projects">
 
               </div>
             </div>
@@ -74,7 +74,7 @@
           </div>
           <div class="row page-content">
             <div class="col-md-10 col-md-offset-1">
-              <div class="amsterdam">
+              <div class="info">
 
               </div>
             </div>
@@ -85,89 +85,7 @@
     {% include footer.html %}    
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.0/slick.min.js"></script>
-    <script src="{{ site.baseurl }}/js/inview.js" type="text/javascript"></script>
-    <script type="text/javascript">
-      $(document).ready(function() {
-        bindMouseWheel();
-        
-        $(".residents").slick({
-          lazyLoad: 'ondemand',
-          slidesToShow: 1,
-          adaptiveHeight: false      
-        });
-
-        $(".residents-list a").on("click", function (e) {
-          e.preventDefault();
-          for(var i = 0; i < $(this).attr("data-page"); i++) {
-            $(".slick-slider").slick("slickGoTo", $(this).attr("data-page"));
-          }
-        });
-
-        $(".slick-prev, .slick-next").hide();
-
-        $(".fp-prev").on("click", function(){
-          $(".slick-prev").trigger("click");
-        });
-
-        $(".fp-next").on("click", function(){
-          $(".slick-next").trigger("click");
-        });  
-
-        $(".menu-button").click(function(e) {
-          $(document).off("mousewheel");
-          $(document).bind("mousewheel", function(e) {
-            e.preventDefault();
-            return false;
-          });
-
-          e.preventDefault();       
-          
-          $("li").removeClass("active");
-
-          $(this).parent("li").addClass("active");
-
-          var page = $(this).attr("data-page");
-
-          $('html, body').animate({
-              scrollTop: $("." + page).offset().top
-          }, 500);
-
-          setTimeout(function(){ bindMouseWheel(); }, 600);          
-        });
-
-        $(".stretch").lazyload();   
-
-        $(".krux-page").each(function(){
-          $(this).bind('inview', function(event, isInView, visiblePartX, visiblePartY) {
-            var page = $(this).attr("data-page");
-            if (isInView) {
-              $(".menu-button[data-page='" + page + "']").parent("li").addClass("active");          
-            } else {
-              $(".menu-button[data-page='" + page + "']").parent("li").removeClass("active"); 
-            }
-          });
-        });                 
-      }); 
-
-      var bindMouseWheel = function () {
-        $(document).off("mousewheel");
-        $(document).bind("mousewheel", function(e) {
-          e.preventDefault();
-          return false;
-        });
-        $(document).bind("mousewheel", function(e){
-          if(e.originalEvent.wheelDelta < 0) {
-            var current = $("li.active");
-            var next = current.next($("li"));
-            next.find("a").trigger("click");
-          } else {     
-            var current = $("li.active");
-            var previous = current.prev($("li"));
-            previous.find("a").trigger("click");
-          }
-          return false;
-        });
-      }        
-    </script>
+    <script type="text/javascript" src="{{ site.baseurl }}/js/inview.js"></script>
+    <script type="text/javascript" src="{{ site.baseurl }}/js/scripts.js"></script>
   </body>
 </html>
