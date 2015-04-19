@@ -11,7 +11,7 @@
     <ul class="nav navbar-nav">
       {% for webpage in site.pages %}
         <li class="{% if forloop.index == 1 %} active {% endif %} menu-item-{{forloop.index}}">
-          <a href="#" class="menu-button" data-page="page-{{forloop.index}}"><span class="krux-bold">krux</span>{{ webpage.title }}</a>         
+          <a href="#" class="menu-button" data-page="page-{{forloop.index}}" style="background-color: white;"><span class="krux-bold">krux</span>{{ webpage.title }}</a>         
         </li> 
       {% endfor %}         
     </ul> 
