@@ -7,7 +7,7 @@
       <div class="row">
         <div class="col-md-12 krux-page page-1" data-page="page-1">  
           <div class="bgImageContainer">
-            <img src="{{site.baseurl}}/images/backgrounds/background-10.jpg" class="stretch" alt="" />
+            <img src="{{site.baseurl}}/images/backgrounds/background-10.jpg" class="stretch img-responsive" alt="" />
           </div>
           <div class="row">
             <div class="col-md-10 col-md-offset-1">
@@ -19,7 +19,7 @@
         </div>
         <div class="col-md-12 krux-page page-2" data-page="page-2">  
           <div class="bgImageContainer">
-            <img src="{{site.baseurl}}/images/backgrounds/background-12.jpg" class="stretch" alt="" />
+            <img src="{{site.baseurl}}/images/backgrounds/background-12.jpg" class="stretch img-responsive" alt="" />
             <div class="background-overlay"></div>
           </div>          
           <div class="fp-controlArrow fp-prev"></div>
@@ -46,7 +46,7 @@
         </div>
         <div class="col-md-12 krux-page page-3" data-page="page-3">  
           <div class="bgImageContainer">
-            <img src="{{site.baseurl}}/images/backgrounds/background-04.jpg" class="stretch" alt="" />
+            <img src="{{site.baseurl}}/images/backgrounds/background-04.jpg" class="stretch img-responsive" alt="" />
           </div>
           <div class="row">
             <div class="col-md-10 col-md-offset-1">
@@ -58,7 +58,7 @@
         </div>
         <div class="col-md-12 krux-page page-4" data-page="page-4">  
           <div class="bgImageContainer">
-            <img src="{{site.baseurl}}/images/backgrounds/background-14.jpg" class="stretch" alt="" />
+            <img src="{{site.baseurl}}/images/backgrounds/background-14.jpg" class="stretch img-responsive" alt="" />
           </div>
           <div class="row">
             <div class="col-md-10 col-md-offset-1">
@@ -70,7 +70,7 @@
         </div>
         <div class="col-md-12 krux-page page-5" data-page="page-5">  
           <div class="bgImageContainer">
-            <img src="{{site.baseurl}}/images/backgrounds/background-16.jpg" class="stretch" alt="" />
+            <img src="{{site.baseurl}}/images/backgrounds/background-16.jpg" class="stretch img-responsive" alt="" />
           </div>
           <div class="row page-content">
             <div class="col-md-10 col-md-offset-1">
@@ -88,6 +88,8 @@
     <script src="{{ site.baseurl }}/js/inview.js" type="text/javascript"></script>
     <script type="text/javascript">
       $(document).ready(function() {
+        bindMouseWheel();
+        
         $(".residents").slick({
           lazyLoad: 'ondemand',
           slidesToShow: 1,
@@ -112,13 +114,25 @@
         });  
 
         $(".menu-button").click(function(e) {
-          e.preventDefault();
+          $(document).off("mousewheel");
+          $(document).bind("mousewheel", function(e) {
+            e.preventDefault();
+            return false;
+          });
+
+          e.preventDefault();       
+          
           $("li").removeClass("active");
+
           $(this).parent("li").addClass("active");
+
           var page = $(this).attr("data-page");
+
           $('html, body').animate({
               scrollTop: $("." + page).offset().top
           }, 500);
+
+          setTimeout(function(){ bindMouseWheel(); }, 600);          
         });
 
         $(".stretch").lazyload();   
@@ -133,7 +147,27 @@
             }
           });
         });                 
-      });      
+      }); 
+
+      var bindMouseWheel = function () {
+        $(document).off("mousewheel");
+        $(document).bind("mousewheel", function(e) {
+          e.preventDefault();
+          return false;
+        });
+        $(document).bind("mousewheel", function(e){
+          if(e.originalEvent.wheelDelta < 0) {
+            var current = $("li.active");
+            var next = current.next($("li"));
+            next.find("a").trigger("click");
+          } else {     
+            var current = $("li.active");
+            var previous = current.prev($("li"));
+            previous.find("a").trigger("click");
+          }
+          return false;
+        });
+      }        
     </script>
   </body>
 </html>
