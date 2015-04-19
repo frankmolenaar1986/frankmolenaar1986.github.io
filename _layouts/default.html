@@ -99,7 +99,8 @@
           }
         });
 
-        $(".menu-button").click(function() {
+        $(".menu-button").click(function(e) {
+          e.preventDefault();
           $("li").removeClass("active");
           $(this).parent("li").addClass("active");
           var page = $(this).attr("data-page");
