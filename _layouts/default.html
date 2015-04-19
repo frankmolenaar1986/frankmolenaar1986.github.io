@@ -22,6 +22,7 @@
             <img src="{{site.baseurl}}/images/backgrounds/background-12.jpg" class="stretch" alt="" />
             <div class="background-overlay"></div>
           </div>          
+          <div class="fp-controlArrow fp-prev"></div>
           <div class="row">
             <div class="col-md-10 col-md-offset-1">
               <div class="residents">
@@ -41,6 +42,7 @@
               </div>
             </div>
           </div>
+          <div class="fp-controlArrow fp-next"></div>
         </div>
         <div class="col-md-12 krux-page page-3" data-page="page-3">  
           <div class="bgImageContainer">
@@ -98,6 +100,16 @@
             $(".slick-slider").slick("slickGoTo", $(this).attr("data-page"));
           }
         });
+
+        $(".slick-prev, .slick-next").hide();
+
+        $(".fp-prev").on("click", function(){
+          $(".slick-prev").trigger("click");
+        });
+
+        $(".fp-next").on("click", function(){
+          $(".slick-next").trigger("click");
+        });  
 
         $(".menu-button").click(function(e) {
           e.preventDefault();

@@ -95,11 +95,35 @@ div.page-content {
 	margin-right: 2em;
 }
 
+.fp-controlArrow {
+	position: absolute;
+	z-index: 4;
+	top: 50%;
+	cursor: pointer;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	margin-top: -38px;
+}
+
+.fp-controlArrow.fp-prev {
+	left: 60px;
+	width: 0;
+	border-width: 38.5px 34px 38.5px 0;
+	border-color: transparent #fff transparent transparent;
+}
+
+.fp-controlArrow.fp-next {
+	right: 15px;
+	border-width: 38.5px 0 38.5px 34px;
+	border-color: transparent transparent transparent #fff;
+}
+
 .residents {
 	font-family: "ReplicaProLight", Helvetica, sans-serif;
 	list-style: none;
 	padding-left: 0;
-	margin-top: 130px;
+	margin-top: 10%;
 	margin-left: auto;
 	margin-right: auto; 	
 	line-height: 28px;
