@@ -103,19 +103,27 @@ div.page-content {
 	width: 0;
 	height: 0;
 	border-style: solid;
-	margin-top: -38px;
+	margin-top: -38px;	
 }
 
 .fp-controlArrow.fp-prev {
 	left: 60px;
 	width: 0;
 	border-width: 38.5px 34px 38.5px 0;
+	border-color: transparent #dedede transparent transparent;
+}
+
+.fp-controlArrow.fp-prev:hover {
 	border-color: transparent #fff transparent transparent;
 }
 
 .fp-controlArrow.fp-next {
 	right: 15px;
 	border-width: 38.5px 0 38.5px 34px;
+	border-color: transparent transparent transparent #dedede;
+}
+
+.fp-controlArrow.fp-next:hover {
 	border-color: transparent transparent transparent #fff;
 }
 
