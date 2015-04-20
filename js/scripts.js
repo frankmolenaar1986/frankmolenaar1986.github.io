@@ -9,6 +9,12 @@ $(document).ready(function() {
     adaptiveHeight: false      
   });
 
+  $(".facilities").slick({
+    lazyLoad: 'ondemand',
+    slidesToShow: 1,
+    adaptiveHeight: false      
+  });
+
   $(".residents-list a").on("click", function (e) {
     e.preventDefault();
     for(var i = 0; i < $(this).attr("data-page"); i++) {
@@ -65,7 +71,7 @@ $(document).ready(function() {
   var mouseY = 0;
   var mousemoved = 0;
 
-  $("html").mousedown(function(){
+  $("html:not(.slick-track)").mousedown(function(){
       clicking = true;
       $("html").css({
         "cursor": "move"
@@ -80,7 +86,7 @@ $(document).ready(function() {
       }); 
   })
 
-  $("html:not(.slick-track)").mousemove(function(e){
+  $("html").mousemove(function(e){
       if(clicking == false) return;
       if (e.pageY < mouseY) {
         mousemoved++;

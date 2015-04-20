@@ -144,12 +144,35 @@ div.page-content {
 	list-style: none;
 }
 
+.facilities {
+	font-family: "ReplicaProLight", Helvetica, sans-serif;
+	list-style: none;
+	padding-left: 0;
+	margin-top: 10%;
+	margin-left: auto;
+	margin-right: auto; 	
+	line-height: 28px;
+	padding: 10px;
+	font-size: 22px;
+}
+
 .slick-track {
 	margin: 4em 0 0 0;
 }
 
-.slick-slide.resident {
+.slick-slide.resident, .slick-slide.facility {
 	min-height: 600px;
+}
+
+.facility p {
+	font-family: "ReplicaProBold", 'Arial Black', 'Arial Bold', Gadget, sans-serif;
+	line-height: 1.2em;
+	font-size:2em;
+	color: white;
+	word-break: break-word;
+	position: absolute;
+	width: 800px;
+	bottom: 0;
 }
 
 li a {

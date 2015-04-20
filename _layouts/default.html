@@ -22,22 +22,24 @@
             <img src="{{site.baseurl}}/images/backgrounds/background-12.jpg" class="stretch img-responsive" alt="" />
             <div class="background-overlay"></div>
           </div>          
-          <div class="fp-controlArrow fp-prev"></div>
+          <div class="fp-controlArrow fp-prev residents-prev"></div>
           <div class="row">
             <div class="col-md-10 col-md-offset-1">
               <div class="residents">
                 {% for resident in site.posts reversed | sort:order %}
-                  <div class="resident">
-                    {% if resident.title != "index" and resident.image %}
-                      <h2 class="center"><span class="krux-bold">{{ resident.title }}</span> <span class="krux-light">{{ resident.profession }}</span></h2>
-                      <img data-lazy="{{ site.baseurl }}{{ resident.image }}" alt="{{ resident.title }}" class="artist-image img-responsive">
-                    {% else %}
-                      {{ resident.content }}      
-                    {% endif %}
-                    {% if resident.website %}
-                      <a href="http://{{resident.website}}" target="blank"><h2 class="center">{{ resident.website }}</h2></a>
-                    {% endif %}
-                  </div>  
+                  {% if resident.category == "residents" %}
+                    <div class="resident">
+                      {% if resident.title != "index" and resident.image %}
+                        <h2 class="center"><span class="krux-bold">{{ resident.title }}</span> <span class="krux-light">{{ resident.profession }}</span></h2>
+                        <img data-lazy="{{ site.baseurl }}{{ resident.image }}" alt="{{ resident.title }}" class="artist-image img-responsive">
+                      {% else %}
+                        {{ resident.content }}      
+                      {% endif %}
+                      {% if resident.website %}
+                        <a href="http://{{resident.website}}" target="blank"><h2 class="center">{{ resident.website }}</h2></a>
+                      {% endif %}
+                    </div>  
+                  {% endif %}
                 {% endfor %}
               </div>
             </div>
@@ -46,15 +48,23 @@
         </div>
         <div class="col-md-12 krux-page page-3" data-page="page-3">  
           <div class="bgImageContainer">
-            <img src="{{site.baseurl}}/images/backgrounds/background-04.jpg" class="stretch img-responsive" alt="" />
+            <img src="{{site.baseurl}}/images/backgrounds/background-13.jpg" class="stretch img-responsive" alt="" />
           </div>
+          <div class="fp-controlArrow fp-prev facilities-prev"></div>
           <div class="row">
             <div class="col-md-10 col-md-offset-1">
-              <div class="facilities">
-
+              <div class="facilities from-bottom-left">
+                {% for facility in site.posts reversed | sort:order %}
+                  {% if facility.category == "facilities" %}
+                    <div class="facility">
+                        {{ facility.content }}
+                    </div>  
+                  {% endif %}
+                {% endfor %}
               </div>
             </div>
           </div>
+          <div class="fp-controlArrow fp-next facilities-next"></div>
         </div>
         <div class="col-md-12 krux-page page-4" data-page="page-4">  
           <div class="bgImageContainer">
@@ -70,7 +80,7 @@
         </div>
         <div class="col-md-12 krux-page page-5" data-page="page-5">  
           <div class="bgImageContainer">
-            <img src="{{site.baseurl}}/images/backgrounds/background-16.jpg" class="stretch img-responsive" alt="" />
+            <img src="{{site.baseurl}}/images/backgrounds/background-09.jpg" class="stretch img-responsive" alt="" />
           </div>
           <div class="row page-content">
             <div class="col-md-10 col-md-offset-1">
