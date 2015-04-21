@@ -3,4 +3,4 @@ category: facilities
 layout: post
 title: Screen Printing
 ---
-Screen printing is also a stencil method of print making in which a design is imposed on a screen of polyester or other fine mesh, with blank areas coated with an impermeable substance. Ink is forced into the mesh openings by the fill blade or squeegee and onto the printing surface during the squeegee stroke.
+Screenprinting workshop
