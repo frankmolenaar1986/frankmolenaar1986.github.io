@@ -169,7 +169,7 @@ div.page-content {
 
 .slick-slide.resident, .slick-slide.facility {
 	min-height: 600px;
-	bottom:20px;
+	padding-bottom:20px;
 }
 
 .facility p {
