@@ -4,5 +4,5 @@ category: residents
 layout: post
 title: Michal Avarham
 profession: product design
-website: http://www.michalavraham.com/
+website: www.michalavraham.com
 ---
