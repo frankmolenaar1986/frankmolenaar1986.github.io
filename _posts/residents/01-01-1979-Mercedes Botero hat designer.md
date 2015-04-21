@@ -4,5 +4,5 @@ category: residents
 layout: post
 title: Mercedes Botero  
 profession: hat designer
-website: http://www.mercedesbotero.com/
+website: www.mercedesbotero.com
 ---

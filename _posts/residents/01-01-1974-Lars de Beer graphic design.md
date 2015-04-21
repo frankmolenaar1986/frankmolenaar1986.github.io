@@ -4,5 +4,5 @@ category: residents
 layout: post
 title: Lars de Beer
 profession: graphic design
-website: http://larsdebeer.nl/
+website: www.larsdebeer.nl
 ---

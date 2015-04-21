@@ -4,5 +4,5 @@ category: residents
 layout: post
 title: Marie Ilse Bourlange
 profession: ceramics
-website: http://www.marieilsebourlanges.com/
+website: www.marieilsebourlanges.com
 ---
