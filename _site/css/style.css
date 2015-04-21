@@ -120,8 +120,10 @@ div.page-content {
 
 .fp-controlArrow.fp-next {
 	right: 15px;
-	border-width: 38.5px 0 38.5px 34px;
-	border-color: transparent transparent transparent #A3A3A3;
+	border-width: ;
+	border-color: ;
+	background-image: url(../images/arrow-right.png);
+	background-repeat: no-repeat;
 }
 
 .fp-controlArrow.fp-next:hover {
