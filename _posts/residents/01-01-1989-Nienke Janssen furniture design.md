@@ -3,5 +3,6 @@ order: 20
 category: residents
 layout: post
 title: Nienke Janssen
-profession: future design
+profession: furniture design
+website: www.nienkejanssen.com
 ---

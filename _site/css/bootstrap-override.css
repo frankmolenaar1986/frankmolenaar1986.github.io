@@ -2,7 +2,6 @@
 /* Navbar */
 
 nav.navbar-default {
-	position: relative;
 	min-height: 0;
 	margin-bottom: 0;
 	background-color: transparent;
@@ -15,20 +14,27 @@ nav.navbar-default .navbar-nav > li > a {
 	color: black;
 	font-family: "ReplicaProLight", 'Arial Black', 'Arial Bold', Gadget, sans-serif;
 	margin: 15px;
-	padding: 5px 15px 0px 15px;
-	font-size: 2em;
-	line-height: 40px;	
-	border-bottom: 5px solid transparent;
+	padding: 3px 15px 3px 15px;
+	font-size: 22px;
+	line-height: 30px;	
 }
 
 nav.navbar-default .navbar-nav > li > a:hover {
 	border-bottom: 5px solid #3C9;
 	background-color: white;
-	color: black;
+	color:black;
 } 
 
-nav.navbar-default .navbar-nav > li.active > a {
-	border-bottom: 5px solid #F33;
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+	color: black; 
 	background-color: white;
-	color: black;
+}
+
+.navbar-collapse {
+	padding-right: 0px;
+	padding-left: 0px;
+} 
+
+.h2, h2 {
+  font-size: 22px;
 }
