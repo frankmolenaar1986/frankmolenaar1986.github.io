@@ -66,7 +66,8 @@ $(document).ready(function() {
       }
     });
   });
-
+  /***********************************
+  /* This is the drag up and down part
   var clicking = false;
   var mouseY = 0;
   var mousemoved = 0;
@@ -101,7 +102,7 @@ $(document).ready(function() {
         mousemoved = 0;
       }
       mouseY = e.pageY;  
-  });                 
+  });*/                
 }); 
 
 var bindMouseWheel = function () {
