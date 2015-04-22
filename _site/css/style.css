@@ -17,21 +17,71 @@
 
 html {
 	font-family: "ReplicaProRegular", 'Arial Black', 'Arial Bold', Gadget, sans-serif;
+	line-height: 24px;
+	font-size: 12px;
 }
 
 body {
 	font-family: "ReplicaProRegular", 'Arial Black', 'Arial Bold', Gadget, sans-serif;
 	height:100%;
-	background: url({{background-image}}) no-repeat center center fixed; 
+	letter-spacing: 1px;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
+	overflow: hidden;
+}
+
+.background-overlay {
+	background-color: rgba(51, 51, 51, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.bgImageContainer {	
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	z-index:0;
+	position: absolute;
+	width:100%; 
+	height:100%;
+
+}
+
+.stretch {
+    width:100%;
+    height:100%;
+}
+
+.krux-container {
+	padding-left: 0px;
+	padding-right: 0px;
+	margin-right: 30px;
+	margin-left: -15px;
+}
+
+.krux-page {
+	margin-bottom:15px;
+	min-height: 1100px;
+}
+
+.krux-page:last-child {
+	margin-bottom:0px;
 }
 
 span.krux-bold {
 	font-family: "ReplicaProBold", 'Arial Black', 'Arial Bold', Gadget, sans-serif;
-	font-weight: bolder;
+	font-weight: bold;
+}
+
+span.krux-light {
+	font-family: "ReplicaProLight", 'Arial', Gadget, sans-serif;
+	font-weight: lighter;
 }
 
 div.page-content {
@@ -39,12 +89,102 @@ div.page-content {
 	color: white;
 	line-height: 24px;
 	background-color: #79C4D3;
-	padding: 20px;
 	font-size: 14px;
 	text-align: left;
 	margin-top: 130px;
+	margin-left: 2em;
+	margin-right: 2em;
+}
+
+.fp-controlArrow {
+	position: absolute;
+	z-index: 4;
+	top: 50%;
+	cursor: pointer;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	margin-top: -38px;	
+}
+
+.fp-controlArrow.fp-prev {
+	left: 60px;
+	width: 0;
+	border-width: 38.5px 34px 38.5px 0;
+	border-color: transparent #A3A3A3 transparent transparent;
+}
+
+.fp-controlArrow.fp-prev:hover {
+	border-color: transparent #fff transparent transparent;
+}
+
+.fp-controlArrow.fp-next {
+	right: 15px;
+	border-width:;
+	border-color:;
+	background-image: url(../images/arrow-right.png);
+	background-repeat: no-repeat;
+}
+
+.fp-controlArrow.fp-next:hover {
+	border-color: transparent transparent transparent #fff;
+}
+
+.residents {
+	font-family: "ReplicaProLight", Helvetica, sans-serif;
+	list-style: none;
+	padding-left: 0;
+	margin-top: 10%;
 	margin-left: auto;
-	margin-right: auto;
+	margin-right: auto; 	
+	line-height: 28px;
+	padding: 10px;
+	font-size: 22px;
+}
+
+.residents ul {
+	list-style: none;
+}
+
+.facilities {
+	font-family: "ReplicaProLight", Helvetica, sans-serif;
+	list-style: none;
+	padding-left: 0;
+	margin-top: 10%;
+	margin-left: auto;
+	margin-right: auto; 	
+	line-height: 28px;
+	padding: 10px;
+	font-size: 22px;
+}
+
+.slick-track {
+	margin: 4em 0 0 0;
+}
+
+.slick-slide.resident, .slick-slide.facility {
+	min-height: 600px;
+}
+
+.facility p {
+	font-family: "ReplicaProBold", 'Arial Black', 'Arial Bold', Gadget, sans-serif;
+	line-height: 1.2em;
+	font-size:2em;
+	color: white;
+	word-break: break-word;
+	position: absolute;
+	width: 800px;
+	bottom: 0;
+}
+
+li a {
+  text-decoration: none;
+  color: white;
+}
+
+.list-subtitle {
+	font-style: italic;
+	font-weight: lighter;
 }
 
 .post {
@@ -56,8 +196,47 @@ a:hover, a:visited {
 }
 
 .artist-image {
-	float: left; 
-	width: 100%;
 	height: auto;
-	margin: 0 2.5% 2.5% 0;
+	margin: 0 auto;
+}
+
+h2.center {
+	text-align: center;
+	color: white;
+}
+
+/********************
+/* Custom menu css */
+nav.navbar-default .navbar-nav > li.menu-item-1 > a:hover,
+	nav.navbar-default .navbar-nav > li.menu-item-1.active > a  {
+		border-bottom: 5px solid #3221c8;
+	}
+
+nav.navbar-default .navbar-nav > li.menu-item-2 > a:hover,
+	nav.navbar-default .navbar-nav > li.menu-item-2.active > a {
+		border-bottom: 5px solid #ff2119;
+	}
+
+nav.navbar-default .navbar-nav > li.menu-item-3 > a:hover,
+	nav.navbar-default .navbar-nav > li.menu-item-3.active > a {
+		border-bottom: 5px solid #279375;
+	}
+
+nav.navbar-default .navbar-nav > li.menu-item-4 > a:hover,
+	nav.navbar-default .navbar-nav > li.menu-item-4.active > a {
+		border-bottom: 5px solid #cfd000;
+	}
+
+nav.navbar-default .navbar-nav > li.menu-item-5 > a:hover,
+	nav.navbar-default .navbar-nav > li.menu-item-5.active > a {
+		border-bottom: 5px solid #b8c5c5;
+	}
+
+nav.navbar-default .navbar-nav > li.active > a {
+	background-color: white;
+	color: black;
+}
+
+.navbar-nav a:active {
+    background-color: white;
 }

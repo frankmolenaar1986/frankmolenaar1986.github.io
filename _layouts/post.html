@@ -1,25 +1,16 @@
 ---
 layout: default
+background: "/images/IMG_8785.jpg"
 ---
-<style>
-	body {
-		background: url("/images/DSCN0301.jpg") no-repeat center center fixed; 
-		-webkit-background-size: cover;
-		-moz-background-size: cover;
-		-o-background-size: cover;
-		background-size: cover;		
-	}
-</style>
 <div class="post">
-
   <header class="post-header">
     <h1 class="post-title">{{ page.title }}</h1>  
   </header>
-
   <article class="post-content">
-  	<img src="{{page.image}}" alt="{{page.title}}"/ class="artist-image img-responsive">{{ content }}
+  	{% if page.image %}
+  		<img src="{{ site.baseurl }}{{page.image}}" alt="{{page.title}}"/ class="artist-image img-responsive">{{ content }}
+  	{% endif %}
   </article>
   <footer>
-  	<p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
   </footer>
 </div>
