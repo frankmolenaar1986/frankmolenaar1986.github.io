@@ -2,4 +2,7 @@
 layout: page
 title: info
 ---
-henkie 
+Krux Amsterdam <br />
+Cruquiusweg 120 A <br />
+1019 AK Amsterdam <br />
+The Netherlands

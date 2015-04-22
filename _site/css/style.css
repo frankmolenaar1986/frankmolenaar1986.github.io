@@ -133,7 +133,7 @@ div.page-content {
 	font-family: "ReplicaProLight", Helvetica, sans-serif;
 	list-style: none;
 	padding-left: 0;
-	margin-top: 10%;
+	margin-top: 5em;
 	margin-left: auto;
 	margin-right: auto; 	
 	line-height: 28px;
@@ -162,6 +162,23 @@ div.page-content {
 	line-height: 28px;
 	padding: 10px;
 	font-size: 22px;
+}
+
+.info {
+	height: 15em;
+	width: 15em;
+	margin: 10em auto;
+	background-color: rgba(51, 51, 51, 0.7);
+	font-family: "ReplicaProBold", 'Arial Black', 'Arial Bold', Gadget, sans-serif;
+	font-size: 1.5em;
+	line-height: 1.2em;
+	text-align: center;	
+}
+
+.info p {
+	
+	height: 5em;
+	padding: 5em 1.5em 5em 1.5em;
 }
 
 .slick-track {
