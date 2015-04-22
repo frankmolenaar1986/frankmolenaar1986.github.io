@@ -46,25 +46,15 @@
           </div>
           <div class="fp-controlArrow fp-next"></div>
         </div>
-        <div class="col-md-12 krux-page page-3" data-page="page-3">  
-          <div class="bgImageContainer">
-            <img src="{{site.baseurl}}/images/backgrounds/background-13.jpg" class="stretch img-responsive" alt="" />
-          </div>
-          <div class="fp-controlArrow fp-prev facilities-prev"></div>
-          <div class="row">
-            <div class="col-md-10 col-md-offset-1">
-              <div class="facilities from-bottom-left">
-                {% for facility in site.posts reversed | sort:order %}
-                  {% if facility.category == "facilities" %}
-                    <div class="facility">
-                        {{ facility.content }}
-                    </div>  
-                  {% endif %}
-                {% endfor %}
-              </div>
-            </div>
-          </div>
-          <div class="fp-controlArrow fp-next facilities-next"></div>
+        <div class="facilities from-bottom-left col-md-12 krux-page page-3" data-page="page-3">
+          {% for facility in site.posts reversed | sort:order %}
+            {% if facility.category == "facilities" %}                    
+              <div class="facility">
+                  <img src="{{site.baseurl}}{{facility.background}}" class="stretch img-responsive" style="height:100%; width:100%;" alt="" />
+                  {{ facility.content }}
+              </div>  
+            {% endif %}
+          {% endfor %}
         </div>
         <div class="col-md-12 krux-page page-4" data-page="page-4">  
           <div class="bgImageContainer">
