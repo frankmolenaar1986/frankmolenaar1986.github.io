@@ -19,6 +19,12 @@ $(document).ready(function() {
     adaptiveHeight: false      
   });
 
+  $(".projects").slick({
+    lazyLoad: 'ondemand',
+    slidesToShow: 1,
+    adaptiveHeight: false      
+  });
+
   $(".residents-list a").on("click", function (e) {
     e.preventDefault();
     for(var i = 0; i < $(this).attr("data-page"); i++) {

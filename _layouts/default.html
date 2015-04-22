@@ -56,18 +56,17 @@
             {% endif %}
           {% endfor %}
         </div>
-        <div class="col-md-12 krux-page page-4" data-page="page-4">  
-          <div class="bgImageContainer">
-            <img src="{{site.baseurl}}/images/backgrounds/background-14.jpg" class="stretch img-responsive" alt="" />
-          </div>
-          <div class="row">
-            <div class="col-md-10 col-md-offset-1">
-              <div class="projects">
-
-              </div>
-            </div>
-          </div>
-        </div>
+        <div class="projects from-bottom-left col-md-12 krux-page page-4" data-page="page-4">
+          {% for project in site.posts reversed | sort:order %}
+            {% if project.category == "projects" %}                    
+              <div class="project">
+                  <img src="{{site.baseurl}}{{project.background}}" class="stretch img-responsive" style="height:100%; width:100%;" alt="" />
+                  {{ project.content }}
+              </div>  
+            {% endif %}
+          {% endfor %}
+        </div>        
+      </div>
         <div class="col-md-12 krux-page page-5" data-page="page-5">  
           <div class="bgImageContainer">
             <img src="{{site.baseurl}}/images/backgrounds/background-09.jpg" class="stretch img-responsive" alt="" />
