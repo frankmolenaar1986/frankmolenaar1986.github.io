@@ -71,6 +71,7 @@ img, div.col-md-10.col-md-offset-1 {
 }
 
 .krux-page {
+	display: table-cell;
 	margin-bottom:15px;
 }
 
@@ -95,9 +96,7 @@ div.page-content {
 	background-color: #79C4D3;
 	font-size: 14px;
 	text-align: left;
-	margin-top: 130px;
-	margin-left: 2em;
-	margin-right: 2em;
+	vertical-align: middle;
 }
 
 .fp-controlArrow {
@@ -222,12 +221,17 @@ a:hover, a:visited {
 
 .artist-image {
 	height: auto;
-	margin: 0 auto;
 }
 
-h2.center {
-	text-align: center;
+h2.resident-title, h2.resident-link {
+	text-align: left;
 	color: white;
+}
+
+.residents .slick-track {
+	height: 50%;
+	margin-top: 8%;
+	margin-bottom: 25%;
 }
 
 /********************

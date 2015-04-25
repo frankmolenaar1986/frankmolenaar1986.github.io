@@ -7,7 +7,7 @@
       <div class="row">
         <div class="col-md-12 krux-page page-1" data-page="page-1">  
           <div class="bgImageContainer">
-            <img src="{{site.baseurl}}/images/backgrounds/background-10.jpg" class="stretch img-responsive" alt="" />
+            <img src="{{site.baseurl}}/images/backgrounds/background-10.jpg" class="stretch img-responsive" alt="krux-amsterdam" />
           </div>
           <div class="row">
             <div class="col-md-10 col-md-offset-1">
@@ -19,7 +19,7 @@
         </div>
         <div class="col-md-12 krux-page page-2" data-page="page-2">  
           <div class="bgImageContainer">
-            <img src="{{site.baseurl}}/images/backgrounds/background-12.jpg" class="stretch img-responsive" alt="" />
+            <img src="{{site.baseurl}}/images/backgrounds/background-12.jpg" class="stretch img-responsive" alt="krux-residents" />
             <div class="background-overlay"></div>
           </div>          
           <div class="fp-controlArrow fp-prev residents-prev"></div>
@@ -30,13 +30,21 @@
                   {% if resident.category == "residents" %}
                     <div class="resident">
                       {% if resident.title != "index" and resident.image %}
-                        <h2 class="center"><span class="krux-bold">{{ resident.title }}</span> <span class="krux-light">{{ resident.profession }}</span></h2>
-                        <img data-lazy="{{ site.baseurl }}{{ resident.image }}" alt="{{ resident.title }}" class="artist-image img-responsive">
+                        <div class="row">
+                          <div class="col-md-6 col-md-offset-3">
+                            <h2 class="resident-title"><span class="krux-bold">{{ resident.title }}</span> <span class="krux-light">{{ resident.profession }}</span></h2>                          
+                            <img data-lazy="{{ site.baseurl }}{{ resident.image }}" alt="{{ resident.title }}" class="artist-image img-responsive">
+                          </div>
+                        </div>
                       {% else %}
                         {{ resident.content }}      
                       {% endif %}
                       {% if resident.website %}
-                        <a href="http://{{resident.website}}" target="blank"><h2 class="center">{{ resident.website }}</h2></a>
+                        <div class="row">
+                          <div class="col-md-6 col-md-offset-3">
+                            <a href="http://{{resident.website}}" target="blank"><h2 class="resident-link">{{ resident.website }}</h2></a>
+                          </div>
+                        </div>
                       {% endif %}
                     </div>  
                   {% endif %}
@@ -50,7 +58,7 @@
           {% for facility in site.posts reversed | sort:order %}
             {% if facility.category == "facilities" %}                    
               <div class="facility">
-                  <img src="{{site.baseurl}}{{facility.background}}" class="stretch img-responsive" style="height:100%; width:100%;" alt="" />
+                  <img src="{{site.baseurl}}{{facility.background}}" class="stretch img-responsive" style="height:100%; width:100%;" alt="krux-facilities" />
                   {{ facility.content }}
               </div>  
             {% endif %}
@@ -60,7 +68,7 @@
           {% for project in site.posts reversed | sort:order %}
             {% if project.category == "projects" %}                    
               <div class="project">
-                  <img src="{{site.baseurl}}{{project.background}}" class="stretch img-responsive" style="height:100%; width:100%;" alt="" />
+                  <img src="{{site.baseurl}}{{project.background}}" class="stretch img-responsive" style="height:100%; width:100%;" alt="krux-projects" />
                   {{ project.content }}
               </div>  
             {% endif %}
@@ -69,13 +77,11 @@
       </div>
         <div class="col-md-12 krux-page page-5" data-page="page-5">  
           <div class="bgImageContainer">
-            <img src="{{site.baseurl}}/images/backgrounds/background-09.jpg" class="stretch img-responsive" alt="" />
+            <img src="{{site.baseurl}}/images/backgrounds/background-09.jpg" class="stretch img-responsive" alt="krux-contact" />
           </div>          
-          <div class="row page-content">
-            <div class="col-md-10 col-md-offset-1">
-              <div class="info">
-                {% include info.html %}
-              </div>
+          <div class="col-md-10 col-md-offset-1">
+            <div class="info">
+              {% include info.html %}
             </div>
           </div>
         </div>
