@@ -150,7 +150,9 @@ div.page-content {
 	text-decoration: none;
 }
 
-.slick-slide.resident {
+.slick-slide .resident-content {
+	width: 50%;
+	margin: 0 auto;
 }
 
 h2.resident-title,

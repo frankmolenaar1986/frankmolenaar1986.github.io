@@ -35,22 +35,20 @@
 {% for resident in sorted_residents %}
   {% if resident.category == "residents" %}
     <div class="resident">
-      <div class="row">
-        <div class="col-md-6 col-md-offset-3">
-          <h2 class="resident-title"><span class="krux-bold">{{ resident.title }}</span> <span class="krux-light">{{ resident.profession }}</span></h2>                          
-          <img data-lazy="{{ site.baseurl }}{{ resident.image }}" alt="{{ resident.title }}" class="resident-image img-responsive">
-          {% if resident.website %}      
-            <h2 class="resident-link">                 
-              <a href="http://{{resident.website}}" target="blank">{{ resident.website }}</a>
-              {% if resident.website2 %}
-                <span>/</span> <a href="http://{{resident.website2}}" target="blank">{{ resident.website2 }}</a>
-              {% endif %}
-              {% if resident.website3 %}
-                <span>/</span> <a href="http://{{resident.website3}}" target="blank">{{ resident.website3 }}</a>
-              {% endif %} 
-            </h2>            
-          {% endif %}
-        </div>
+      <div class="resident-content">
+        <h2 class="resident-title"><span class="krux-bold">{{ resident.title }}</span> <span class="krux-light">{{ resident.profession }}</span></h2>                          
+        <img data-lazy="{{ site.baseurl }}{{ resident.image }}" alt="{{ resident.title }}" class="resident-image img-responsive">
+        {% if resident.website %}      
+          <h2 class="resident-link">                 
+            <a href="http://{{resident.website}}" target="blank">{{ resident.website }}</a>
+            {% if resident.website2 %}
+              <span>/</span> <a href="http://{{resident.website2}}" target="blank">{{ resident.website2 }}</a>
+            {% endif %}
+            {% if resident.website3 %}
+              <span>/</span> <a href="http://{{resident.website3}}" target="blank">{{ resident.website3 }}</a>
+            {% endif %} 
+          </h2>            
+        {% endif %}
       </div>
     </div>  
   {% endif %}
