@@ -168,8 +168,10 @@ div.page-content {
 	font-size: 1.5em;
 	line-height: 1.2em;
 	position: absolute;
-	bottom: 0;
-	left: 0;
+	bottom: 90px;
+	margin-left: 90px;
+	color: white;
+	text-align:center;
 }
 
 .info p {	
