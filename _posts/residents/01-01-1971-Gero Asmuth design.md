@@ -1,5 +1,4 @@
 ---
-order: 2
 category: residents
 layout: post
 title: Gero Asmuth 
