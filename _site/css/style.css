@@ -106,6 +106,7 @@ div.page-content {
 	height: 40px;
 	cursor: pointer;
 	opacity: 0.8;
+	z-index: 2000;
 }
 
 .fp-controlArrow:hover {
