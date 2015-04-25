@@ -225,8 +225,8 @@ li a {
 }
 
 a:hover, a:visited {
-	
-	text-decoration: none;
+	color:white;
+	text-decoration:none;
 }
 
 .artist-image {
@@ -239,9 +239,7 @@ h2.center {
 	color: white;
 }
 
-h2.center a:hover{
-	color:#ff2119;
-}
+h2:hover{color:#ff2119;}
 
 /********************
 /* Custom menu css */
