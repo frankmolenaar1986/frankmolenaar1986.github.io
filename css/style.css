@@ -150,6 +150,10 @@ div.page-content {
 	text-decoration: none;
 }
 
+.slick-slide.resident {
+	min-height: 20em;
+}
+
 .facilities, .projects {
 	font-family: "ReplicaProLight", Helvetica, sans-serif;
 	list-style: none;
@@ -161,29 +165,6 @@ div.page-content {
 	font-size: 22px;
 }
 
-.info {
-	height: 15em;
-	width: 15em;
-	background-color: rgba(51, 51, 51, 0.7);
-	font-family: "ReplicaProBold", 'Arial Black', 'Arial Bold', Gadget, sans-serif;
-	font-size: 1.5em;
-	line-height: 1.2em;
-	position: absolute;
-	bottom: 90px;
-	margin-left: 90px;
-	color: white;
-	text-align:center;
-}
-
-.info p {	
-	height: 5em;
-	padding: 5em 1.5em 5em 1.5em;
-}
-
-.slick-slide.resident {
-	min-height: 20em;
-}
-
 .facilities .slick-list, .projects .slick-list {
 	margin-left: 15px;
   	margin-right: -45px;
@@ -193,16 +174,28 @@ div.page-content {
 	max-width: none;
 }
 
-.facility p, .project p {
+.facility p, .project p, .info p {
 	font-family: "ReplicaProBold", 'Arial Black', 'Arial Bold', Gadget, sans-serif;
 	line-height: 1.2em;
 	font-size:42px;
 	color: white;
 	word-break: break-word;
-	position: absolute;
+	position: absolute;	
 	width: 800px;
-	bottom: 40%;
 	margin-left: 60px;
+}
+
+.facility p {	
+	bottom: 40%;	
+}
+
+.project p {
+	bottom: 50%;
+}
+
+.info p {
+	bottom: 20%;
+ 	text-shadow: 2px 2px #333;
 }
 
 li a {
