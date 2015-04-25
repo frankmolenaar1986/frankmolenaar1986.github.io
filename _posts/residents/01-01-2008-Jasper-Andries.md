@@ -1,5 +1,4 @@
 ---
-order: 39
 category: residents
 layout: post
 title: Jasper Andries
