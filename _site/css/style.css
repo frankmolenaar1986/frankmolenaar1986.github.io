@@ -184,7 +184,7 @@ div.page-content {
 }
 
 .slick-slide.resident {
-	min-height: 600px;
+	height: 600px;
 }
 
 .facilities .slick-list, .projects .slick-list {

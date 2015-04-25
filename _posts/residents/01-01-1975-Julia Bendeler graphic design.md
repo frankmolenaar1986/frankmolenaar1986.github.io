@@ -3,6 +3,7 @@ order: 6
 category: residents
 layout: post
 title: Julia Bendeler
-profession: graphic design
+profession: graphic & concept design
 website: www.juliabendeler.com
+image: /images/residents/juliabendeler_01.png
 ---
