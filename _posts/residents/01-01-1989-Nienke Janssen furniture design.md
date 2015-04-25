@@ -2,6 +2,7 @@
 category: residents
 layout: post
 title: Nienke Janssen
-profession: furniture design
+profession: product design
 website: www.nienkejanssen.com
+image: /images/residents/nienkejanssen_01.png
 ---

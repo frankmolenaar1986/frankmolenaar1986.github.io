@@ -4,4 +4,5 @@ layout: post
 title: Germans Ermics
 profession: Graphic Design
 website: www.germansermics.com
+image: /images/residents/germansermics_01.png
 ---

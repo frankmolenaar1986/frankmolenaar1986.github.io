@@ -2,7 +2,7 @@
 category: residents
 layout: post
 title: Arno Hoogland
-profession: product design
+profession: creator / artificer
 website: www.arnohoogland.com
 image: /images/residents/arnohoogland_01.png
 ---
