@@ -151,7 +151,23 @@ div.page-content {
 }
 
 .slick-slide.resident {
-	min-height: 20em;
+}
+
+h2.resident-title,
+ h2.resident-link span,
+  h2.resident-link a {
+	text-align: left;
+	color: white;
+}
+
+.residents .slick-track {
+	height: 50%;
+	margin-top: 8%;
+	margin-bottom: 25%;
+}
+
+.resident-image {
+	max-width: inherit;
 }
 
 .facilities, .projects {
@@ -165,16 +181,20 @@ div.page-content {
 	font-size: 22px;
 }
 
-.facilities .slick-list, .projects .slick-list {
+.facilities .slick-list,
+ .projects .slick-list {
 	margin-left: 15px;
   	margin-right: -45px;
 }
 
-.facilities .slick-slide img, .projects .slick-slide img  {
+.facilities .slick-slide img,
+ .projects .slick-slide img  {
 	max-width: none;
 }
 
-.facility p, .project p, .info p {
+.facility p,
+ .project p,
+  .info p {
 	font-family: "ReplicaProBold", 'Arial Black', 'Arial Bold', Gadget, sans-serif;
 	line-height: 1.2em;
 	font-size:42px;
@@ -182,19 +202,19 @@ div.page-content {
 	word-break: break-word;
 	position: absolute;	
 	width: 800px;
-	margin-left: 60px;
+	margin-left: 100px;
 }
 
 .facility p {	
-	bottom: 40%;	
+	bottom: 30%;	
 }
 
 .project p {
-	bottom: 50%;
+	bottom: 40%;
 }
 
 .info p {
-	bottom: 20%;
+	bottom: 10%;
  	text-shadow: 2px 2px #333;
 }
 
@@ -214,23 +234,6 @@ li a {
 
 a:hover, a:visited {
 	color: white;
-}
-
-.artist-image {
-	height: auto;
-}
-
-h2.resident-title,
- h2.resident-link span,
-  h2.resident-link a {
-	text-align: left;
-	color: white;
-}
-
-.residents .slick-track {
-	height: 50%;
-	margin-top: 8%;
-	margin-bottom: 25%;
 }
 
 /********************

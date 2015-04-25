@@ -38,6 +38,11 @@ $(document).ready(function() {
     }
   });
 
+  $(".residents-menu-button").on("click", function (e) {
+    e.preventDefault();
+    $(".residents.slick-slider").slick("slickGoTo", 0);
+  });
+
   $(".slick-prev, .slick-next").hide();
 
   $(".fp-prev").on("click", function(){
