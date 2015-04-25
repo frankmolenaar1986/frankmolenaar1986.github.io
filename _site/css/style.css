@@ -72,11 +72,12 @@ img, div.col-md-10.col-md-offset-1 {
 
 .krux-page {
 	display: table-cell;
+	vertical-align:middle;
 	margin-bottom:15px;
 }
 
 .krux-page:last-child {
-	margin-bottom:0px;
+	margin-bottom: 0px;
 }
 
 span.krux-bold {
@@ -226,7 +227,9 @@ a:hover, a:visited {
 	height: auto;
 }
 
-h2.resident-title, h2.resident-link {
+h2.resident-title,
+ h2.resident-link span,
+  h2.resident-link a {
 	text-align: left;
 	color: white;
 }

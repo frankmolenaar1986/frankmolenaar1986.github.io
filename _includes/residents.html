@@ -35,22 +35,26 @@
 {% for resident in sorted_residents %}
   {% if resident.category == "residents" %}
     <div class="resident">
-      {% if resident.title != "AAAAA" and resident.image %}
-        <div class="row">
-          <div class="col-md-6 col-md-offset-3">
-            <h2 class="resident-title"><span class="krux-bold">{{ resident.title }}</span> <span class="krux-light">{{ resident.profession }}</span></h2>                          
-            <img data-lazy="{{ site.baseurl }}{{ resident.image }}" alt="{{ resident.title }}" class="artist-image img-responsive">
-          </div>
+      <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+          <h2 class="resident-title"><span class="krux-bold">{{ resident.title }}</span> <span class="krux-light">{{ resident.profession }}</span></h2>                          
+          <img data-lazy="{{ site.baseurl }}{{ resident.image }}" alt="{{ resident.title }}" class="artist-image img-responsive">
         </div>
-      {% else %}
-        {{ resident.content }}      
-      {% endif %}
-      {% if resident.website %}
-        <div class="row">
-          <div class="col-md-6 col-md-offset-3">
-            <a href="http://{{resident.website}}" target="blank"><h2 class="resident-link">{{ resident.website }}</h2></a>
-          </div>
+      </div>  
+      {% if resident.website %}      
+      <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+          <h2 class="resident-link">                 
+            <a href="http://{{resident.website}}" target="blank">{{ resident.website }}</a>
+            {% if resident.website2 %}
+              <span>/</span> <a href="http://{{resident.website2}}" target="blank">{{ resident.website2 }}</a>
+            {% endif %}
+            {% if resident.website3 %}
+              <span>/</span> <a href="http://{{resident.website3}}" target="blank">{{ resident.website3 }}</a>
+            {% endif %} 
+          </h2>
         </div>
+      </div>
       {% endif %}
     </div>  
   {% endif %}
