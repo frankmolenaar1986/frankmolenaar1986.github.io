@@ -3,6 +3,12 @@ $(document).ready(function() {
     $(this).css( "height", $(window).innerHeight() + "px" );
   });
 
+/* hmrr...
+  $(window).resize(function() {
+    $(".krux-page").css( "height", $(window).innerHeight() + "px" );
+  });
+*/
+
   bindMouseWheel();
 
   $('.stretch').attr('draggable', false);
