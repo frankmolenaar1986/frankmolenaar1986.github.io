@@ -1,0 +1,8 @@
+{% for facility in site.posts reversed | sort:order %}
+	{% if facility.category == "facilities" %}                    
+	  <div class="facility">
+	      <img src="{{site.baseurl}}{{facility.background}}" class="stretch img-responsive" style="height:100%; width:100%;" alt="krux-facilities" />
+	      {{ facility.content }}
+	  </div>  
+	{% endif %}
+{% endfor %}   

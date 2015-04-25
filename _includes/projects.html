@@ -1,0 +1,8 @@
+{% for project in site.posts reversed | sort:order %}
+	{% if project.category == "projects" %}                    
+	  <div class="project">
+	      <img src="{{site.baseurl}}{{project.background}}" class="stretch img-responsive" style="height:100%; width:100%;" alt="krux-projects" />
+	      {{ project.content }}
+	  </div>  
+	{% endif %}
+{% endfor %}

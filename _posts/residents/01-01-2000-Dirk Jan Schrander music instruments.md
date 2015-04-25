@@ -1,7 +1,7 @@
 ---
-order: 31
 category: residents
 layout: post
-title: Drik Jan Schrander
+title: Dirk Jan Schrander
 profession: music instruments 
+website: www.dirkjanschrander.com
 ---

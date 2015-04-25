@@ -1,7 +1,7 @@
 ---
-order: 15
 category: residents
 layout: post
 title: Germans Ermics
-profession: 
+profession: Graphic Design
+website: www.germansermics.com
 ---

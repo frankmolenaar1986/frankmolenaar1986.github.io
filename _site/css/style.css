@@ -18,16 +18,24 @@
 html {
 	font-family: "ReplicaProRegular", 'Arial Black', 'Arial Bold', Gadget, sans-serif;
 	line-height: 24px;
-	font-size: 14px;
+	font-size: 12px;
 }
 
 body {
 	font-family: "ReplicaProRegular", 'Arial Black', 'Arial Bold', Gadget, sans-serif;
 	height:100%;
+	letter-spacing: 1px;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
+	overflow: hidden;
+}
+
+img, div.col-md-10.col-md-offset-1 {
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	user-select: none;
 }
 
 .background-overlay {
@@ -39,45 +47,179 @@ body {
     height: 100%;
 }
 
+.bgImageContainer {	
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	z-index:0;
+	position: absolute;
+	width:100%; 
+	height:auto;
+}
+
+.stretch {
+    width:100%;
+    height:100%;
+}
+
+.krux-container {
+	padding-left: 0px;
+	padding-right: 0px;
+	margin-right: 30px;
+	margin-left: -15px;
+}
+
+.krux-page {
+	display: table-cell;
+	vertical-align:middle;
+	margin-bottom:15px;
+}
+
+.krux-page:last-child {
+	margin-bottom: 0px;
+}
+
 span.krux-bold {
 	font-family: "ReplicaProBold", 'Arial Black', 'Arial Bold', Gadget, sans-serif;
-	font-weight: bolder;
+	font-weight: bold;
 }
 
 span.krux-light {
 	font-family: "ReplicaProLight", 'Arial', Gadget, sans-serif;
-	font-weight: bolder;
+	font-weight: lighter;
 }
 
 div.page-content {
 	background-color: white;
 	color: white;
-	line-height: 24px;
+	line-height: 2em;
 	background-color: #79C4D3;
-	padding: 5em;
-	font-size: 14px;
+	font-size: 1em;
 	text-align: left;
-	margin-top: 130px;
-	margin-left: 2em;
-	margin-right: 2em;
+	vertical-align: middle;
+}
+
+.fp-controlArrow {
+	position: absolute;
+	top: 50%;
+	width: 30px;
+	height: 40px;
+	cursor: pointer;
+	opacity: 0.8;
+	z-index: 2000;
+}
+
+.fp-controlArrow:hover {
+	opacity: 1;
+}
+
+.fp-controlArrow.fp-prev {
+	left: 60px;
+	background: url("../images/kruxwebsite_arrow_left.png") no-repeat;
+}
+
+.fp-controlArrow.fp-next {
+	right: 30px;
+	background: url("../images/kruxwebsite_arrow_right.png") no-repeat;
+}
+
+.fp-controlArrow.fp-next:hover {
+	border-color: transparent transparent transparent #fff;
 }
 
 .residents {
 	font-family: "ReplicaProLight", Helvetica, sans-serif;
 	list-style: none;
 	padding-left: 0;
-	margin-top: 130px;
+	margin-top: 5em;
 	margin-left: auto;
-	margin-right: auto;  
-	font-weight: lighter;
-	height: 600px;
+	margin-right: auto; 	
 	line-height: 28px;
 	padding: 10px;
-	font-size: 24px;
+	font-size: 22px;
 }
 
 .residents ul {
 	list-style: none;
+	text-decoration: none;
+}
+
+.residents ul a:hover{
+	color: #ff2119;
+	text-decoration: none;
+}
+
+.slick-slide .resident-content {
+	width: 50%;
+	margin: 0 auto;
+}
+
+h2.resident-title,
+ h2.resident-link span,
+  h2.resident-link a {
+	text-align: left;
+	color: white;
+}
+
+.residents .slick-track {
+	height: 50%;
+	margin-top: 8%;
+	margin-bottom: 25%;
+}
+
+.resident-image {
+	max-width: inherit;
+}
+
+.facilities, .projects {
+	font-family: "ReplicaProLight", Helvetica, sans-serif;
+	list-style: none;
+	padding-left: 0;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom:20px; 	
+	line-height: 28px;
+	font-size: 22px;
+}
+
+.facilities .slick-list,
+ .projects .slick-list {
+	margin-left: 15px;
+  	margin-right: -45px;
+}
+
+.facilities .slick-slide img,
+ .projects .slick-slide img  {
+	max-width: none;
+}
+
+.facility p,
+ .project p,
+  .info p,
+   .amsterdam p {
+	font-family: "ReplicaProBold", 'Arial Black', 'Arial Bold', Gadget, sans-serif;
+	line-height: 1.2em;
+	font-size:42px;
+	color: white;
+	word-break: break-word;
+	position: absolute;	
+	width: 800px;
+	margin-left: 100px;
+}
+
+.amsterdam p,
+ .info p  {
+	bottom: 10%;
+ 	text-shadow: 2px 2px #333;
+}
+
+.project p {
+	bottom: 40%;
+}
+
+.facility p {	
+	bottom: 30%;	
 }
 
 li a {
@@ -87,6 +229,7 @@ li a {
 
 .list-subtitle {
 	font-style: italic;
+	font-weight: lighter;
 }
 
 .post {
@@ -97,12 +240,38 @@ a:hover, a:visited {
 	color: white;
 }
 
-.artist-image {
-	height: auto;
-	margin: 0 auto;
+/********************
+/* Custom menu css */
+nav.navbar-default .navbar-nav > li.menu-item-1 > a:hover,
+	nav.navbar-default .navbar-nav > li.menu-item-1.active > a  {
+		border-bottom: 5px solid #3221c8;
+	}
+
+nav.navbar-default .navbar-nav > li.menu-item-2 > a:hover,
+	nav.navbar-default .navbar-nav > li.menu-item-2.active > a {
+		border-bottom: 5px solid #ff2119;
+	}
+
+nav.navbar-default .navbar-nav > li.menu-item-3 > a:hover,
+	nav.navbar-default .navbar-nav > li.menu-item-3.active > a {
+		border-bottom: 5px solid #279375;
+	}
+
+nav.navbar-default .navbar-nav > li.menu-item-4 > a:hover,
+	nav.navbar-default .navbar-nav > li.menu-item-4.active > a {
+		border-bottom: 5px solid #cfd000;
+	}
+
+nav.navbar-default .navbar-nav > li.menu-item-5 > a:hover,
+	nav.navbar-default .navbar-nav > li.menu-item-5.active > a {
+		border-bottom: 5px solid #b8c5c5;
+	}
+
+nav.navbar-default .navbar-nav > li.active > a {
+	background-color: white;
+	color: black;
 }
 
-h2.center {
-	text-align: center;
-	color: white;
+.navbar-nav a:active {
+    background-color: white;
 }

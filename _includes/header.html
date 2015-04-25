@@ -1,21 +1,19 @@
-<header class="site-header">
-  <nav class="navbar navbar-default">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-    </div>
-    <div class="collapse navbar-collapse">
-      <ul class="nav navbar-nav">
-        {% for webpage in site.pages %}
-          <li {% if page.title == webpage.title %} class="active" {% endif %}>
-            <a href="{{ site.baseurl }}{{webpage.url}}"><span class="krux-bold">krux</span>{{ webpage.title }}</a>
-          </li> 
-        {% endfor %}         
-      </ul> 
-    </div>      
-  </nav>
-</header>
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+  </div>
+  <div class="collapse navbar-collapse">
+    <ul class="nav navbar-nav">
+      {% for webpage in site.pages %}
+        <li class="{% if forloop.index == 1 %} active {% endif %} menu-item-{{forloop.index}}{% if webpage.title == 'residents' %} residents-menu-button {% endif %}">
+          <a href="#" class="menu-button" data-page="page-{{forloop.index}}" style="background-color: white;"><span class="krux-bold">krux</span>{{ webpage.title }}</a>         
+        </li> 
+      {% endfor %}         
+    </ul> 
+  </div>      
+</nav>

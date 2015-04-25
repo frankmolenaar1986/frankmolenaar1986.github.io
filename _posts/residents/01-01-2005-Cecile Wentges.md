@@ -1,7 +1,7 @@
 ---
-order: 36
 category: residents
 layout: post
 title: Cecile Wentges 
-profession: 
+profession: spacial design
+website: www.cecilewentges.com
 ---

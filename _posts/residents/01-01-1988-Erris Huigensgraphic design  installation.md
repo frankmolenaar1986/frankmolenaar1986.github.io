@@ -1,7 +1,8 @@
 ---
-order: 19
 category: residents
 layout: post
-title: Erris Huijgens
-profession: graphic design installation
+title: Graphic Surgery
+profession: visual art
+website: www.graphicsurgery.nl
+image: /images/residents/graphicsurgery_01.jpg
 ---
