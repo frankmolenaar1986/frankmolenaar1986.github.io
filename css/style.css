@@ -196,7 +196,8 @@ h2.resident-title,
 
 .facility p,
  .project p,
-  .info p {
+  .info p,
+   .amsterdam p {
 	font-family: "ReplicaProBold", 'Arial Black', 'Arial Bold', Gadget, sans-serif;
 	line-height: 1.2em;
 	font-size:42px;
@@ -207,17 +208,18 @@ h2.resident-title,
 	margin-left: 100px;
 }
 
-.facility p {	
-	bottom: 30%;	
+.amsterdam p,
+ .info p  {
+	bottom: 10%;
+ 	text-shadow: 2px 2px #333;
 }
 
 .project p {
 	bottom: 40%;
 }
 
-.info p {
-	bottom: 10%;
- 	text-shadow: 2px 2px #333;
+.facility p {	
+	bottom: 30%;	
 }
 
 li a {
