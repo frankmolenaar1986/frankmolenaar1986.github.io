@@ -1,5 +1,4 @@
 ---
-order: 11
 category: residents
 layout: post
 title: Khurtova / Bourlanges

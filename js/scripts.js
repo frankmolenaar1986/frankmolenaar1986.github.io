@@ -3,6 +3,12 @@ $(document).ready(function() {
     $(this).css( "height", $(window).innerHeight() + "px" );
   });
 
+/* hmrr...
+  $(window).resize(function() {
+    $(".krux-page").css( "height", $(window).innerHeight() + "px" );
+  });
+*/
+
   bindMouseWheel();
 
   $('.stretch').attr('draggable', false);
@@ -30,6 +36,11 @@ $(document).ready(function() {
     for(var i = 0; i < $(this).attr("data-page"); i++) {
       $(".slick-slider").slick("slickGoTo", $(this).attr("data-page"));
     }
+  });
+
+  $(".residents-menu-button").on("click", function (e) {
+    e.preventDefault();
+    $(".residents.slick-slider").slick("slickGoTo", 0);
   });
 
   $(".slick-prev, .slick-next").hide();

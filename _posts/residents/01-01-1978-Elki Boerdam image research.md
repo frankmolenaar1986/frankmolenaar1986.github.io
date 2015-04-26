@@ -1,5 +1,4 @@
 ---
-order: 9
 category: residents
 layout: post
 title: Elki Boerdam

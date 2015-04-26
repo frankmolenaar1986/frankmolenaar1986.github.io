@@ -7,76 +7,59 @@
       <div class="row">
         <div class="col-md-12 krux-page page-1" data-page="page-1">  
           <div class="bgImageContainer">
-            <img src="{{site.baseurl}}/images/backgrounds/background-10.jpg" class="stretch img-responsive" alt="" />
+            <img src="{{site.baseurl}}/images/backgrounds/background-10.jpg" class="stretch img-responsive" alt="krux-amsterdam" />
           </div>
-          <div class="row">
-            <div class="col-md-10 col-md-offset-1">
-              <div class="amsterdam">
-
-              </div>
-            </div>
+          <div class="amsterdam">
+            {% include home.html %}
           </div>
         </div>
-        <div class="col-md-12 krux-page page-2" data-page="page-2">  
+      </div>
+      <div class="row">
+        <div class="col-md-12 krux-page page-2" data-page="page-2"> 
           <div class="bgImageContainer">
-            <img src="{{site.baseurl}}/images/backgrounds/background-s-12.jpg" class="stretch img-responsive" alt="" />
+            <img src="{{site.baseurl}}/images/backgrounds/background-s-12.jpg" class="stretch img-responsive" alt="krux-residents" />
             <div class="background-overlay"></div>
           </div>          
-          <div class="fp-controlArrow fp-prev residents-prev"></div>
-          <div class="row">
-            <div class="col-md-10 col-md-offset-1">
-              <div class="residents">
-                {% for resident in site.posts reversed | sort:order %}
-                  {% if resident.category == "residents" %}
-                    <div class="resident">
-                      {% if resident.title != "index" and resident.image %}
-                        <h2 class="center"><span class="krux-bold">{{ resident.title }}</span> <span class="krux-light">{{ resident.profession }}</span></h2>
-                        <img data-lazy="{{ site.baseurl }}{{ resident.image }}" alt="{{ resident.title }}" class="artist-image img-responsive">
-                      {% else %}
-                        {{ resident.content }}      
-                      {% endif %}
-                      {% if resident.website %}
-                        <a href="http://{{resident.website}}" target="blank"><h2 class="center">{{ resident.website }}</h2></a>
-                      {% endif %}
-                    </div>  
-                  {% endif %}
-                {% endfor %}
-              </div>
+          <div class="fp-controlArrow fp-prev residents-prev">
+          </div>
+          <div class="col-md-10 col-md-offset-1">
+            <div class="residents">
+              {% include residents.html %}
             </div>
           </div>
-          <div class="fp-controlArrow fp-next"></div>
-        </div>
-        <div class="facilities from-bottom-left col-md-12 krux-page page-3" data-page="page-3">
-          {% for facility in site.posts reversed | sort:order %}
-            {% if facility.category == "facilities" %}                    
-              <div class="facility">
-                  <img src="{{site.baseurl}}{{facility.background}}" class="stretch img-responsive" style="height:100%; width:100%;" alt="" />
-                  {{ facility.content }}
-              </div>  
-            {% endif %}
-          {% endfor %}
-        </div>
-        <div class="projects from-bottom-left col-md-12 krux-page page-4" data-page="page-4">
-          {% for project in site.posts reversed | sort:order %}
-            {% if project.category == "projects" %}                    
-              <div class="project">
-                  <img src="{{site.baseurl}}{{project.background}}" class="stretch img-responsive" style="height:100%; width:100%;" alt="" />
-                  {{ project.content }}
-              </div>  
-            {% endif %}
-          {% endfor %}
+          <div class="fp-controlArrow fp-next">
+          </div>
         </div>        
       </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="fp-controlArrow fp-prev facitlites-prev">
+          </div>
+          <div class="facilities from-bottom-left col-md-12 krux-page page-3" data-page="page-3">              
+            {% include facilities.html %}   
+          </div>
+          <div class="fp-controlArrow fp-next facitlites-next">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="fp-controlArrow fp-prev facitlites-prev">
+          </div>
+          <div class="projects from-bottom-left col-md-12 krux-page page-4" data-page="page-4">
+            {% include projects.html %}
+          </div>  
+          <div class="fp-controlArrow fp-next facitlites-next">
+          </div>
+        </div>
+      </div>      
+      <div class="row">
         <div class="col-md-12 krux-page page-5" data-page="page-5">  
           <div class="bgImageContainer">
-            <img src="{{site.baseurl}}/images/backgrounds/background-09.jpg" class="stretch img-responsive" alt="" />
+            <img src="{{site.baseurl}}/images/backgrounds/background-09.jpg" class="stretch img-responsive" alt="krux-contact" />
           </div>          
-          <div class="row page-content">
-            <div class="col-md-10 col-md-offset-1">
-              <div class="info">
-                {% include info.html %}
-              </div>
-            </div>
+          <div class="info">
+            {% include info.html %}
           </div>
         </div>
       </div>

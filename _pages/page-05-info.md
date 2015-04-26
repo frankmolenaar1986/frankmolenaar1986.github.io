@@ -1,8 +1,0 @@
----
-layout: page
-title: info
----
-Krux Amsterdam <br />
-Cruquiusweg 120 A <br />
-1019 AK Amsterdam <br />
-The Netherlands
