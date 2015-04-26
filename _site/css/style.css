@@ -102,6 +102,7 @@ div.page-content {
 
 .fp-controlArrow {
 	position: absolute;
+
   	top: 50%;
   	width: 30px;
   	height: 40px;
@@ -113,12 +114,8 @@ div.page-content {
 .fp-controlArrow.fp-prev {
 	left: 60px;
   	background: url("../images/kruxwebsite_arrow_left.png") no-repeat;
-	top: 50%;
-	width: 30px;
-	height: 40px;
-	cursor: pointer;
-	opacity:;
-	z-index: 2000;
+
+	
 }
 
 .fp-controlArrow:hover {
@@ -129,6 +126,7 @@ div.page-content {
 .fp-controlArrow:hover {
 	opacity: 1;
 }
+
 
 .fp-controlArrow.fp-prev {
 	left: 60px;
@@ -150,12 +148,12 @@ div.page-content {
 	font-family: "ReplicaProLight", Helvetica, sans-serif;
 	list-style: none;
 	padding-left: 0;
-	margin-top: 5em;
-	margin-left: auto;
+	margin-top:8%;
+	margin-left: 20px;
 	margin-right: auto; 	
 	line-height: 28px;
 	padding: 10px;
-	font-size: 22px;
+	font-size: 1.6em;
 }
 
 .residents ul {
@@ -169,7 +167,7 @@ div.page-content {
 }
 
 .slick-slide .resident-content {
-	width: 50%;
+	width: ;
 	margin: 0 auto;
 }
 
@@ -178,19 +176,25 @@ h2.resident-title,
   h2.resident-link a {
 	text-align: left;
 	color: white;
+	
 }
 
 .residents .slick-track {
 	height: 50%;
 	margin-top: 8%;
-	margin-bottom: 25%;
+	margin-bottom: 20%;
 }
 
 .resident-image {
 	max-width: inherit;
+	max-height:18em;
 }
 
-.facilities, .projects {
+.residents-list {
+	padding-right:0px;
+}
+
+.facilities, .projects, .info, .amsterdam {
 	font-family: "ReplicaProLight", Helvetica, sans-serif;
 	list-style: none;
 	padding-left: 0;
@@ -218,7 +222,7 @@ h2.resident-title,
    .amsterdam p {
 	font-family: "ReplicaProBold", 'Arial Black', 'Arial Bold', Gadget, sans-serif;
 	line-height: 1.2em;
-	font-size:42px;
+	font-size:2em;
 	color: white;
 	word-break: break-word;
 	position: absolute;	
@@ -228,16 +232,16 @@ h2.resident-title,
 
 .amsterdam p,
  .info p  {
-	bottom: 10%;
- 	text-shadow: 2px 2px #333;
+	bottom: 8%;
+ 	
 }
 
 .project p {
-	bottom: 40%;
+	bottom: 20%;
 }
 
 .facility p {	
-	bottom: 30%;	
+	bottom: 20%;	
 }
 
 li a {

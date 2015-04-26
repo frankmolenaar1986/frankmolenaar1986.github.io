@@ -206,6 +206,6 @@
 .slick-slide img
 {
     display: block;
-    max-width: 800px;
-    height:500px;
+    max-width: auto;
+    max-height:;
 }
