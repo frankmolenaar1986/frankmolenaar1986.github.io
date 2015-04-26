@@ -39,7 +39,7 @@ img, div.col-md-10.col-md-offset-1 {
 }
 
 .background-overlay {
-	background-color: rgba(51, 51, 51, 0.7);
+	background-color: rgba(51, 51, 51, 0.3) ;
     position: absolute;
     top: 0;
     left: 0;
@@ -100,49 +100,115 @@ div.page-content {
 	vertical-align: middle;
 }
 
-.fp-controlArrow {
+.fp-controlArrow1, .fp-controlArrow2, .fp-controlArrow3, .fp-controlArrow4 {
 	position: absolute;
-
   	top: 50%;
   	width: 30px;
   	height: 40px;
   	cursor: pointer;
- 	opacity: ;
- 	z-index: 2000;	
+ 	z-index: 2000;
+
 }
 
-.fp-controlArrow.fp-prev {
+
+/* Pijlen Residents*/
+
+.fp-controlArrow1.fp-prev {
 	left: 60px;
-  	background: url("../images/kruxwebsite_arrow_left.png") no-repeat;
-
-	
+	background: url("../images/pijlen/kruxwebsite_arrow_left.png") no-repeat;
 }
 
-.fp-controlArrow:hover {
-	opacity: 1;
-
-}
-
-.fp-controlArrow:hover {
-	opacity: 1;
-}
-
-
-.fp-controlArrow.fp-prev {
-	left: 60px;
-	background: url("../images/kruxwebsite_arrow_left.png") no-repeat;
-}
-
-.fp-controlArrow.fp-next {
+.fp-controlArrow1.fp-next {
 	right: 30px;
 
-  	background: url("../images/kruxwebsite_arrow_right.png") no-repeat;
+  	background: url("../images/pijlen/kruxwebsite_arrow_right.png") no-repeat;
 
 }
 
-.fp-controlArrow.fp-next:hover {
-	border-color: transparent transparent transparent #fff;
+/* Pijlen Facilities*/
+
+.fp-controlArrow2.fp-prev {
+	left: 60px;
+	background: url("../images/pijlen/kruxwebsite_arrow_left.png") no-repeat;
 }
+
+.fp-controlArrow2.fp-next {
+	right: 30px;
+
+  	background: url("../images/pijlen/kruxwebsite_arrow_right.png") no-repeat;
+
+}
+
+/* Pijlen Projects*/
+
+.fp-controlArrow3.fp-prev {
+	left: 60px;
+	background: url("../images/pijlen/kruxwebsite_arrow_left.png") no-repeat;
+}
+
+.fp-controlArrow3.fp-next {
+	right: 30px;
+
+  	background: url("../images/pijlen/kruxwebsite_arrow_right.png") no-repeat;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  Hover pijlen rood  */
+
+.fp-controlArrow1.fp-next:hover {
+	background: url("../images/pijlen/residents_arrow_right.png") no-repeat;
+}
+
+.fp-controlArrow1.fp-prev:hover {
+	background: url("../images/pijlen/residents_arrow_left.png") no-repeat;
+}
+
+
+
+/*  Hover pijlen groen  */
+
+
+.fp-controlArrow2.fp-next:hover {
+	background: url("../images/pijlen/facilities_arrow_right.png") no-repeat;
+}
+
+.fp-controlArrow2.fp-prev:hover {
+	background: url("../images/pijlen/facilities_arrow_left.png") no-repeat;
+}
+
+
+/*  Hover pijlen geel  */
+
+
+.fp-controlArrow3.fp-next:hover {
+	background: url("../images/pijlen/projects_arrow_right.png") no-repeat;
+}
+
+.fp-controlArrow3.fp-prev:hover {
+	background: url("../images/pijlen/projects_arrow_left.png") no-repeat;
+}
+
+
+
+
+
+
+
+
+
 
 .residents {
 	font-family: "ReplicaProLight", Helvetica, sans-serif;
@@ -176,6 +242,7 @@ h2.resident-title,
   h2.resident-link a {
 	text-align: left;
 	color: white;
+	margin-bottom:20px;
 	
 }
 
@@ -261,6 +328,17 @@ li a {
 a:hover, a:visited {
 	color: white;
 }
+
+h2.resident-link a:hover{
+	color:#ff2119 !important;
+	text-decoration: none !important;
+}
+
+h2.resident-link a:visited{
+	color:white;
+	text-decoration: none !important;
+}
+
 
 /********************
 /* Custom menu css */
