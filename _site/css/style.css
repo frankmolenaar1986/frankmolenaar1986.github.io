@@ -102,7 +102,6 @@ div.page-content {
 
 .fp-controlArrow {
 	position: absolute;
-<<<<<<< HEAD
   	top: 50%;
   	width: 30px;
   	height: 40px;
@@ -114,19 +113,21 @@ div.page-content {
 .fp-controlArrow.fp-prev {
 	left: 60px;
   	background: url("../images/kruxwebsite_arrow_left.png") no-repeat;
-
-=======
 	top: 50%;
 	width: 30px;
 	height: 40px;
 	cursor: pointer;
-	opacity: 0.8;
+	opacity:;
 	z-index: 2000;
 }
 
 .fp-controlArrow:hover {
 	opacity: 1;
->>>>>>> origin/master
+
+}
+
+.fp-controlArrow:hover {
+	opacity: 1;
 }
 
 .fp-controlArrow.fp-prev {
@@ -136,11 +137,9 @@ div.page-content {
 
 .fp-controlArrow.fp-next {
 	right: 30px;
-<<<<<<< HEAD
+
   	background: url("../images/kruxwebsite_arrow_right.png") no-repeat;
-=======
-	background: url("../images/kruxwebsite_arrow_right.png") no-repeat;
->>>>>>> origin/master
+
 }
 
 .fp-controlArrow.fp-next:hover {
