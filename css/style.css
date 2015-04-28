@@ -241,8 +241,8 @@ h2.resident-title,
 }
 
 .resident-content {
-	margin: 0 auto;
-  	width: 50%;
+	margin-left:25%;
+	margin-right:25%;
 }
 
 .resident-image {
