@@ -151,9 +151,19 @@ div.page-content {
 
 .fp-controlArrow3.fp-next {
 	right: 30px;
-
   	background: url("../images/pijlen/kruxwebsite_arrow_right.png") no-repeat;
+}
 
+/* Pijlen Info */
+
+.fp-controlArrow4.fp-prev {
+	left: 60px;
+	background: url("../images/pijlen/kruxwebsite_arrow_left.png") no-repeat;
+}
+
+.fp-controlArrow4.fp-next {
+	right: 30px;
+  	background: url("../images/pijlen/kruxwebsite_arrow_right.png") no-repeat;
 }
 
 /*  Hover pijlen rood  */
