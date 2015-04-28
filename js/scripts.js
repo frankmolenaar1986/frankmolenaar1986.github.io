@@ -1,6 +1,7 @@
 $(document).ready(function() {
   $(".krux-page").each(function(){
     $(this).css( "height", $(window).innerHeight() + "px" );
+    $(this).find("img").css( "height", $(window).innerHeight() + "px" );
   });
 
 /* hmrr...
@@ -26,6 +27,12 @@ $(document).ready(function() {
   });
 
   $(".projects").slick({
+    lazyLoad: 'ondemand',
+    slidesToShow: 1,
+    adaptiveHeight: false      
+  });
+
+  $(".infos").slick({
     lazyLoad: 'ondemand',
     slidesToShow: 1,
     adaptiveHeight: false      

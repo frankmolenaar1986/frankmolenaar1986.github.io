@@ -157,19 +157,6 @@ div.page-content {
 
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*  Hover pijlen rood  */
 
 .fp-controlArrow1.fp-next:hover {
@@ -179,8 +166,6 @@ div.page-content {
 .fp-controlArrow1.fp-prev:hover {
 	background: url("../images/pijlen/residents_arrow_left.png") no-repeat;
 }
-
-
 
 /*  Hover pijlen groen  */
 
@@ -209,11 +194,6 @@ div.page-content {
 
 
 
-
-
-
-
-
 .residents {
 	font-family: "ReplicaProLight", Helvetica, sans-serif;
 	list-style: none;
@@ -234,6 +214,10 @@ div.page-content {
 .residents ul a:hover{
 	color: #ff2119;
 	text-decoration: none;
+}
+
+.slick-slider {
+  margin-bottom: 0px;
 }
 
 .slick-slide .resident-content {
@@ -265,25 +249,32 @@ h2.resident-title,
 	padding-right:0px;
 }
 
-.facilities, .projects, .info, .amsterdam {
+.facilities, 
+ .projects,
+  .info,
+   .amsterdam  {
 	font-family: "ReplicaProLight", Helvetica, sans-serif;
 	list-style: none;
 	padding-left: 0;
 	margin-left: auto;
 	margin-right: auto;
-	margin-bottom:20px; 	
 	line-height: 28px;
 	font-size: 22px;
 }
 
 .facilities .slick-list,
- .projects .slick-list {
+ .projects .slick-list {  
 	margin-left: 15px;
   	margin-right: -45px;
 }
 
+.infos .slick-list  {
+	margin-left: -15px;
+	margin-right: -45px;
+}
+
 .facilities .slick-slide img,
- .projects .slick-slide img  {
+ .projects .slick-slide img {
 	max-width: none;
 }
 
@@ -308,11 +299,11 @@ h2.resident-title,
 }
 
 .project p {
-	bottom: 20%;
+	bottom: 8%;
 }
 
 .facility p {	
-	bottom: 20%;	
+	bottom: 8%;	
 }
 
 li a {
