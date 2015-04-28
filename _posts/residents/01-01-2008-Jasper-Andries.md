@@ -2,7 +2,7 @@
 category: residents
 layout: post
 title: Jasper Andries
-profession: illustrations / signpainting 
+profession: illustration / signpainting 
 image: /images/residents/jasperandries_01.png
 website: www.jasperandries.com
 ---
