@@ -107,8 +107,8 @@ div.page-content {
 .fp-controlArrow1, .fp-controlArrow2, .fp-controlArrow3, .fp-controlArrow4 {
 	position: absolute;
   	top: 49%;
-  	width: 3%;
-  	height: 4%;
+  	width: 30px;
+  	height: 40px;
   	cursor: pointer;
  	z-index: 2000;
 }
