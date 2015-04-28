@@ -1,5 +1,9 @@
 $(document).ready(function() {
-  
+  $(".krux-page").each(function(){
+    $(this).css( "height", $(window).innerHeight() + "px" );
+    $(this).find("img").css( "height", $(window).innerHeight() + "px" );
+  });
+
   bindMouseWheel();
 
   $('.stretch').attr('draggable', false);
