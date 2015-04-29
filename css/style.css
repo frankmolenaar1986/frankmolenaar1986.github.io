@@ -22,7 +22,7 @@ html {
 }
 
 .slick-slide img {
-	max-width: 100%;
+	max-height: 22em;
 }
 
 body {
@@ -116,12 +116,12 @@ div.page-content {
 /* Pijlen Residents*/
 
 .fp-controlArrow1.fp-prev {
-	left: 3%;
+	left: 5%;
 	background: url("../images/pijlen/kruxwebsite_arrow_left.png") no-repeat;
 }
 
 .fp-controlArrow1.fp-next {
-	right: 3%;
+	right: 5%;
   	background: url("../images/pijlen/kruxwebsite_arrow_right.png") no-repeat;
 }
 
@@ -138,12 +138,12 @@ div.page-content {
 /* Pijlen Facilities*/
 
 .fp-controlArrow2.fp-prev {
-	left: 3%;
+	left: 5%;
 	background: url("../images/pijlen/kruxwebsite_arrow_left.png") no-repeat;
 }
 
 .fp-controlArrow2.fp-next {
-	right: 3%;
+	right: 5%;
   	background: url("../images/pijlen/kruxwebsite_arrow_right.png") no-repeat;
 }
 
@@ -160,12 +160,12 @@ div.page-content {
 /* Pijlen Projects*/
 
 .fp-controlArrow3.fp-prev {
-	left: 3%;
+	left: 5%;
 	background: url("../images/pijlen/kruxwebsite_arrow_left.png") no-repeat;
 }
 
 .fp-controlArrow3.fp-next {
-	right: 3%;
+	right: 5%;
   	background: url("../images/pijlen/kruxwebsite_arrow_right.png") no-repeat;
 }
 
@@ -180,12 +180,12 @@ div.page-content {
 
 /* Pijlen Info */
 .fp-controlArrow4.fp-prev {
-	left: 3%;
+	left: 5%;
 	background: url("../images/pijlen/kruxwebsite_arrow_left.png") no-repeat;
 }
 
 .fp-controlArrow4.fp-next {
-	right: 3%;
+	right: 5%;
   	background: url("../images/pijlen/kruxwebsite_arrow_right.png") no-repeat;
 }
 
@@ -196,6 +196,24 @@ div.page-content {
 
 .fp-controlArrow4.fp-next:hover {
   	background: url("../images/pijlen/info_arrow_right.png") no-repeat;
+}
+
+
+
+
+
+
+
+
+/*  Hover pijlen grijs  */
+
+
+.fp-controlArrow4.fp-next:hover {
+	background: url("../images/pijlen/info_arrow_right.png") no-repeat;
+}
+
+.fp-controlArrow4.fp-prev:hover {
+	background: url("../images/pijlen/info_arrow_left.png") no-repeat;
 }
 
 
@@ -248,21 +266,21 @@ div.page-content {
 	word-break: break-word;
 	position: absolute;	
 	width: 800px;
-	margin-left: 100px;
+	margin-left: 150px;
 }
 
 .amsterdam p,
  .info p  {
-	bottom: 8%;
+	bottom: 50px;
  	
 }
 
 .project p {
-	bottom: 8%;
+	bottom: 50px;
 }
 
 .facility p {	
-	bottom: 8%;	
+	bottom: 50px;	
 }
 
 li a {
@@ -373,8 +391,8 @@ div.infos .slick-list, div.infos .slick-list .slick-track,
 .residents-index {
 	display: table-cell;
 	vertical-align: bottom;
-	padding-bottom: 4%;
-	padding-left: 4%;
+	padding-bottom: 50px;
+	padding-left: 150px;
 }
 
 .resident-content {
