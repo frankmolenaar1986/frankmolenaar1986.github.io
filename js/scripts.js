@@ -3,6 +3,12 @@ $(document).ready(function() {
     $(this).css( "height", $(window).innerHeight() + "px" );
   });
 
+  $(window).on("resize", function(){
+    $(".krux-page").each(function(){
+      $(this).css( "height", $(window).innerHeight() + "px" );
+    });
+  });
+
   bindMouseWheel();
 
   $('.stretch').attr('draggable', false);
@@ -75,8 +81,8 @@ $(document).ready(function() {
     setTimeout(function(){ bindMouseWheel(); }, 520);          
   });
 
-  $(".stretch").lazyload();   
-
+  /***********************************
+  /* This is the drag up and down part
   $(".krux-page").each(function(){
     $(this).bind('inview', function(event, isInView, visiblePartX, visiblePartY) {
       var page = $(this).attr("data-page");
@@ -87,8 +93,7 @@ $(document).ready(function() {
       }
     });
   });
-  /***********************************
-  /* This is the drag up and down part
+  
   var clicking = false;
   var mouseY = 0;
   var mousemoved = 0;
@@ -132,6 +137,7 @@ var bindMouseWheel = function () {
     e.preventDefault();
     return false;
   });
+
   $(document).bind("mousewheel", function(e){
     if(e.originalEvent.wheelDelta < 0) {
       nextMenuItem();
@@ -140,6 +146,19 @@ var bindMouseWheel = function () {
     }
     return false;
   });
+
+  $(document).bind("DOMMouseScroll", function(e) {
+    e.preventDefault();
+    return false;
+  });
+  $(document).bind("DOMMouseScroll", function(e){
+    if(e.originalEvent.wheelDelta < 0) {
+      nextMenuItem();
+    } else {     
+      previousMenuItem();
+    }
+    return false;
+  });  
 }
 
 var nextMenuItem = function () {

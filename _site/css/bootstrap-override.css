@@ -1,5 +1,14 @@
 /****************************************************
 /* Navbar */
+.navbar-small {
+	width: 80%;
+	float: left;
+	margin: 5px 10%;
+}
+
+.icon-bar {
+	width: 100%!important;
+}
 
 nav.navbar-default {
 	min-height: 0;
