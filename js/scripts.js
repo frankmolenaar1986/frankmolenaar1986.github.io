@@ -1,4 +1,6 @@
 $(document).ready(function() {
+  var scrollable = true;
+
   $(".krux-page").each(function(){
     $(this).css( "height", $(window).innerHeight() + "px" );
   });
@@ -60,26 +62,33 @@ $(document).ready(function() {
   });  
 
   $(".menu-button").click(function(e) {
-    var newMenuItem = $(this);
-    $(document).off("mousewheel");
-    $(document).bind("mousewheel", function(e) {
-      e.preventDefault();
-      return false;
-    });
+    if (scrollable) {
+      scrollTimeOut = false;
 
-    e.preventDefault();       
-    
-    $("li").removeClass("active");   
+      $(document).off("mousewheel");
+      $(document).bind("mousewheel", function(e) {
+        e.preventDefault();
+        return false;
+      });
 
-    var page = newMenuItem.attr("data-page");
+      e.preventDefault();       
+      
+      $("li").removeClass("active");
 
-    $('html, body').animate({
-        scrollTop: $("." + page).offset().top
-    }, 500);
+      $(this).parent("li").addClass("active");
 
-    setTimeout(function(){ 
-      newMenuItem.parent("li").addClass("active");
-      bindMouseWheel(); }, 520);          
+      var page = $(this).attr("data-page");
+
+      $('html, body').animate({
+          scrollTop: $("." + page).offset().top;
+          setTimeout(function(){ 
+          bindMouseWheel();
+          scrollTimeOut = true
+        }, 500); 
+      }, 500);
+
+
+    }         
   });
 
   /***********************************
