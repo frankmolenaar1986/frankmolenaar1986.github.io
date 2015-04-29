@@ -69,7 +69,7 @@ img, div.col-md-10.col-md-offset-1 {
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	z-index: -1;
+	z-index: 0;
 	position: absolute;
 	width: 100%; 
 	height: 100%;
@@ -116,11 +116,14 @@ div.page-content {
 	vertical-align: middle;
 }
 
-.fp-controlArrow1, .fp-controlArrow2, .fp-controlArrow3, .fp-controlArrow4 {
+.fp-controlArrow1,
+ .fp-controlArrow2,
+  .fp-controlArrow3,
+   .fp-controlArrow4 {
 	position: absolute;
   	top: 49%;
   	width: 30px;
-  	height: 40px;
+  	height: 42px;
   	cursor: pointer;
  	z-index: 2000;
 }
@@ -286,8 +289,7 @@ li a {
   color: white;
 }
 
-.list-subtitle {
-	
+.list-subtitle {	
 	font-weight: lighter;
 }
 
@@ -367,7 +369,7 @@ div.infos .slick-list, div.infos .slick-list .slick-track,
 
 .residents {
 	font-family: "ReplicaProLight", Helvetica, sans-serif;
-	font-size: 2.3vmin;
+	font-size: 1.3vw;
 }
 
 .residents ul {
@@ -386,23 +388,23 @@ div.infos .slick-list, div.infos .slick-list .slick-track,
 
 .resident.display-table {
 	width: 100%;
-	display: table!important;
+	display: table;
 }
 
-.residents-index {
+.resident-index {
 	display: table-cell;
-	vertical-align: bottom;
-	padding-bottom: 5%;
-	padding-left: 5%;
+	vertical-align: middle;
+}
+
+.residents-list ul {
+	margin-bottom: 0;
 }
 
 .resident-content {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
 	margin: 0 auto;
-	max-width: 50%;
-	max-height: 60%;
-}
-
-.resident-image {
 	max-width: 100%;
 	max-height: 100%;
 }
@@ -413,14 +415,8 @@ div.infos .slick-list, div.infos .slick-list .slick-track,
 }
 
 .resident-title,
- .resident-link {
-	text-align: left;
-}
-
-@media (max-width: @screen-xs) {
-    body{font-size: 10px;}
-}
-
-@media (max-width: @screen-sm) {
-    body{font-size: 14px;}
+ .resident-link,
+  .resident-image {
+  	font-size: 1.5vw;
+ 	margin: 0.5vw auto;
 }

@@ -31,7 +31,7 @@ nav.navbar-default .navbar-nav > li > a {
 }
 
 nav.navbar-default .navbar-nav > li > a:hover {
-	border-bottom: 5px solid #333;
+	border-bottom: 0px solid #333;
 	background-color: white;
 	color:black;
 } 

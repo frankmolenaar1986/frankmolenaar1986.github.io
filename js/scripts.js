@@ -3,7 +3,7 @@ $(document).ready(function() {
     $(this).css( "height", $(window).innerHeight() + "px" );
   });
 
-  $(window).on("resize", function(){
+  $(window).on("resize", function(){    
     $(".krux-page").each(function(){
       $(this).css( "height", $(window).innerHeight() + "px" );
     });
@@ -14,27 +14,27 @@ $(document).ready(function() {
   $('.stretch').attr('draggable', false);
   
   $(".residents").slick({
-    
+    lazyLoad: 'ondemand',
     slidesToShow: 1,
-    adaptiveHeight: false      
+    adaptiveHeight: true      
   });
 
   $(".facilities").slick({
-    
+    lazyLoad: 'ondemand',
     slidesToShow: 1,
-    adaptiveHeight: false      
+    adaptiveHeight: true      
   });
 
   $(".projects").slick({
-    
+    lazyLoad: 'ondemand',
     slidesToShow: 1,
-    adaptiveHeight: false      
+    adaptiveHeight: true      
   });
 
   $(".infos").slick({
     lazyLoad: 'ondemand',
     slidesToShow: 1,
-    adaptiveHeight: false      
+    adaptiveHeight: true      
   });
 
   $(".residents-list a").on("click", function (e) {
@@ -44,10 +44,10 @@ $(document).ready(function() {
     }
   });
 
-  $(".residents-menu-button").on("click", function (e) {
+  $(".menu-button").on("click", function (e) {
     e.preventDefault();
-    $(".residents.slick-slider").slick("slickGoTo", 0);
-  });
+    $(".slick-slider").slick("slickGoTo", 0, false);
+  });  
 
   $(".slick-prev, .slick-next").hide();
 
