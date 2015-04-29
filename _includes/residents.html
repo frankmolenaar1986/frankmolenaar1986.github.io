@@ -1,5 +1,8 @@
 <!-- Residents inxdex -->
 <div class="resident display-table">
+  <div class="bgImageContainer">
+    <div class="background-overlay"></div>
+  </div> 
   {% assign cutoffathalf = site.categories.residents | size | divided_by:2 | plus:1 %} 
   {% assign sorted_residents = (site.categories.residents | sort: 'title') %}
   {% assign counter = 1 %}
