@@ -4,10 +4,12 @@
 	width: 80%;
 	float: left;
 	margin: 5px 10%;
+	background-color:white;
 }
 
 .icon-bar {
-	width: 100%!important;
+	width: 50%!important;
+	margin: 0 auto;
 }
 
 nav.navbar-default {
@@ -52,4 +54,6 @@ nav.navbar-default .navbar-nav > li > a:hover {
 	font-family: ReplicaProBold, 'Arial Black', 'Arial Bold', Gadget, sans-serif;
 	font-weight: bolder;
 	border-radius: 50%;
+	width: 40px;
+	margin: 0 auto!important;
 }

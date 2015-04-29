@@ -8,7 +8,7 @@ $(document).ready(function() {
       $(this).css( "height", $(window).innerHeight() + "px" );
     });
   });
-  
+
   bindMouseWheel();
 
   $('.stretch').attr('draggable', false);
@@ -141,24 +141,11 @@ var bindMouseWheel = function () {
   $(document).bind("mousewheel", function(e){
     if(e.originalEvent.wheelDelta < 0) {
       nextMenuItem();
-    } else {     
+    } else if (e.originalEvent.wheelDelta > 0)  {     
       previousMenuItem();
     }
     return false;
-  });
-
-  $(document).bind("DOMMouseScroll", function(e) {
-    e.preventDefault();
-    return false;
-  });
-  $(document).bind("DOMMouseScroll", function(e){
-    if(e.originalEvent.wheelDelta < 0) {
-      nextMenuItem();
-    } else {     
-      previousMenuItem();
-    }
-    return false;
-  });  
+  }); 
 }
 
 var nextMenuItem = function () {
