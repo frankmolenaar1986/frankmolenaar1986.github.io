@@ -29,7 +29,7 @@ nav.navbar-default .navbar-nav > li > a {
 }
 
 nav.navbar-default .navbar-nav > li > a:hover {
-	border-bottom: 5px solid #3C9;
+	border-bottom: 5px solid #333;
 	background-color: white;
 	color:black;
 } 
@@ -46,4 +46,10 @@ nav.navbar-default .navbar-nav > li > a:hover {
 
 .h2, h2 {
   font-size: 22px;
+}
+
+.facebook-button {
+	font-family: ReplicaProBold, 'Arial Black', 'Arial Bold', Gadget, sans-serif;
+	font-weight: bolder;
+	border-radius: 50%;
 }

@@ -123,7 +123,16 @@ div.page-content {
 .fp-controlArrow1.fp-next {
 	right: 3%;
   	background: url("../images/pijlen/kruxwebsite_arrow_right.png") no-repeat;
+}
 
+/*  Hover pijlen rood  */
+
+.fp-controlArrow1.fp-next:hover {
+	background: url("../images/pijlen/residents_arrow_right.png") no-repeat;
+}
+
+.fp-controlArrow1.fp-prev:hover {
+	background: url("../images/pijlen/residents_arrow_left.png") no-repeat;
 }
 
 /* Pijlen Facilities*/
@@ -136,7 +145,16 @@ div.page-content {
 .fp-controlArrow2.fp-next {
 	right: 3%;
   	background: url("../images/pijlen/kruxwebsite_arrow_right.png") no-repeat;
+}
 
+/*  Hover pijlen groen  */
+
+.fp-controlArrow2.fp-next:hover {
+	background: url("../images/pijlen/facilities_arrow_right.png") no-repeat;
+}
+
+.fp-controlArrow2.fp-prev:hover {
+	background: url("../images/pijlen/facilities_arrow_left.png") no-repeat;
 }
 
 /* Pijlen Projects*/
@@ -151,8 +169,16 @@ div.page-content {
   	background: url("../images/pijlen/kruxwebsite_arrow_right.png") no-repeat;
 }
 
-/* Pijlen Info */
+/*  Hover pijlen geel  */
+.fp-controlArrow3.fp-next:hover {
+	background: url("../images/pijlen/projects_arrow_right.png") no-repeat;
+}
 
+.fp-controlArrow3.fp-prev:hover {
+	background: url("../images/pijlen/projects_arrow_left.png") no-repeat;
+}
+
+/* Pijlen Info */
 .fp-controlArrow4.fp-prev {
 	left: 3%;
 	background: url("../images/pijlen/kruxwebsite_arrow_left.png") no-repeat;
@@ -163,38 +189,20 @@ div.page-content {
   	background: url("../images/pijlen/kruxwebsite_arrow_right.png") no-repeat;
 }
 
-/*  Hover pijlen rood  */
-
-.fp-controlArrow1.fp-next:hover {
-	background: url("../images/pijlen/residents_arrow_right.png") no-repeat;
+/* Pijlen Info */
+.fp-controlArrow4.fp-prev:hover {
+	background: url("../images/pijlen/info_arrow_left.png") no-repeat;
 }
 
-.fp-controlArrow1.fp-prev:hover {
-	background: url("../images/pijlen/residents_arrow_left.png") no-repeat;
-}
-
-/*  Hover pijlen groen  */
-
-
-.fp-controlArrow2.fp-next:hover {
-	background: url("../images/pijlen/facilities_arrow_right.png") no-repeat;
-}
-
-.fp-controlArrow2.fp-prev:hover {
-	background: url("../images/pijlen/facilities_arrow_left.png") no-repeat;
+.fp-controlArrow4.fp-next:hover {
+  	background: url("../images/pijlen/info_arrow_right.png") no-repeat;
 }
 
 
-/*  Hover pijlen geel  */
 
 
-.fp-controlArrow3.fp-next:hover {
-	background: url("../images/pijlen/projects_arrow_right.png") no-repeat;
-}
 
-.fp-controlArrow3.fp-prev:hover {
-	background: url("../images/pijlen/projects_arrow_left.png") no-repeat;
-}
+
 
 .slick-slider {
 	margin-bottom: 0px;
