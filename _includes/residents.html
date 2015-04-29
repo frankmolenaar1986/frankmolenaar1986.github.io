@@ -41,7 +41,7 @@
       <div class="resident" style="display:table-cell; vertical-align: middle; text-align: center;">      
         <div class="resident-content">        
           <h2 class="resident-title"><span class="krux-bold">{{ resident.title }}</span> <span class="krux-light">{{ resident.profession }}</span></h2>                          
-          <img data-lazy="{{ site.baseurl }}{{ resident.image }}" alt="{{ resident.title }}" class="resident-image">
+          <img data-lazy="{{ site.baseurl }}{{ resident.image }}" alt="{{ resident.title }}" class="img-responsive resident-image">
           {% if resident.website %}      
             <h2 class="resident-link">                 
               <a href="http://{{resident.website}}" target="blank">{{ resident.website }}</a>
