@@ -36,7 +36,9 @@ nav.navbar-default .navbar-nav > li > a:hover {
 	color:black;
 } 
 
-.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+.navbar-default .navbar-nav>.active>a,
+ .navbar-default .navbar-nav>.active>a:focus,
+  .navbar-default .navbar-nav>.active>a:hover {
 	color: black; 
 	background-color: white;
 }
@@ -55,5 +57,4 @@ nav.navbar-default .navbar-nav > li > a:hover {
 	font-weight: bolder;
 	border-radius: 50%;
 	width: 40px;
-	margin: 0 auto!important;
 }
