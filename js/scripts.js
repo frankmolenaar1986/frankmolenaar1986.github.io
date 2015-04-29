@@ -80,14 +80,13 @@ $(document).ready(function() {
       var page = $(this).attr("data-page");
 
       $('html, body').animate({
-          scrollTop: $("." + page).offset().top;
-          setTimeout(function(){ 
-          bindMouseWheel();
-          scrollTimeOut = true
-        }, 500); 
+          scrollTop: $("." + page).offset().top          
       }, 500);
 
-
+      setTimeout(function(){ 
+          bindMouseWheel();
+          scrollTimeOut = true
+      }, 500); 
     }         
   });
 
