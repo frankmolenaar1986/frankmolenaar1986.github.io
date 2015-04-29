@@ -63,7 +63,7 @@ $(document).ready(function() {
 
   $(".menu-button").click(function(e) {
     if (scrollable) {
-      scrollTimeOut = false;
+      scrollable = false;
 
       $(document).off("mousewheel");
       $(document).bind("mousewheel", function(e) {
@@ -85,7 +85,7 @@ $(document).ready(function() {
 
       setTimeout(function(){ 
           bindMouseWheel();
-          scrollTimeOut = true
+          scrollable = true
       }, 500); 
     }         
   });
