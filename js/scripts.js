@@ -8,6 +8,7 @@ $(document).ready(function() {
   $(window).on("resize", function(){    
     $(".krux-page").each(function(){
       $(this).css( "height", $(window).innerHeight() + "px" );
+      $(".active:first-child").trigger("click");
     });
   });
 
@@ -92,54 +93,32 @@ $(document).ready(function() {
     }         
   });
 
-  /***********************************
-  /* This is the drag up and down part
-  $(".krux-page").each(function(){
-    $(this).bind('inview', function(event, isInView, visiblePartX, visiblePartY) {
-      var page = $(this).attr("data-page");
-      if (isInView) {
-        $(".menu-button[data-page='" + page + "']").parent("li").addClass("active");          
-      } else {
-        $(".menu-button[data-page='" + page + "']").parent("li").removeClass("active"); 
-      }
-    });
-  });
-  
-  var clicking = false;
-  var mouseY = 0;
-  var mousemoved = 0;
-
-  $("html:not(.slick-track)").mousedown(function(){
-      clicking = true;
-      $("html").css({
-        "cursor": "move"
-      });         
+  $(".resident-image").on("click", function(){
+    $(".fp-next").trigger("click");
   });
 
-  $("html").mouseup(function(){
-      clicking = false;
-      mousemoved = 0;
-      $("html").css({
-        "cursor": "auto"
-      }); 
-  })
+  $(document).keydown(function(e) {
+    switch(e.which) {
+        case 37: // left
+        $(".fp-next").trigger("click");
+        break;
 
-  $("html").mousemove(function(e){
-      if(clicking == false) return;
-      if (e.pageY < mouseY) {
-        mousemoved++;
-      } else {
-        mousemoved--;
-      }
-      if (mousemoved > 25) {
-        nextMenuItem();
-        mousemoved = 0;
-      } else if (mousemoved < -25){
+        case 38: // up
         previousMenuItem();
-        mousemoved = 0;
-      }
-      mouseY = e.pageY;  
-  });*/                
+        break;
+
+        case 39: // right
+        $(".fp-next").trigger("click");
+        break;
+
+        case 40: // down
+        nextMenuItem();
+        break;
+
+        default: return; 
+    }
+    e.preventDefault(); 
+  });              
 }); 
 
 var bindMouseWheel = function () {

@@ -1,3 +1,6 @@
-<p>
-	{{ site.description }}
-</p>
+{% for post in site.posts %}
+	{% if post.category == "amsterdam" %}
+		{{ post.content }} 
+		{% break %}
+	{% endif %}
+{% endfor %}
