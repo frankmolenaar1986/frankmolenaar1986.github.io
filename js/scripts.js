@@ -60,6 +60,7 @@ $(document).ready(function() {
   });  
 
   $(".menu-button").click(function(e) {
+    var newMenuItem = $(this);
     $(document).off("mousewheel");
     $(document).bind("mousewheel", function(e) {
       e.preventDefault();
@@ -68,17 +69,17 @@ $(document).ready(function() {
 
     e.preventDefault();       
     
-    $("li").removeClass("active");
+    $("li").removeClass("active");   
 
-    $(this).parent("li").addClass("active");
-
-    var page = $(this).attr("data-page");
+    var page = newMenuItem.attr("data-page");
 
     $('html, body').animate({
         scrollTop: $("." + page).offset().top
     }, 500);
 
-    setTimeout(function(){ bindMouseWheel(); }, 520);          
+    setTimeout(function(){ 
+      newMenuItem.parent("li").addClass("active");
+      bindMouseWheel(); }, 520);          
   });
 
   /***********************************
