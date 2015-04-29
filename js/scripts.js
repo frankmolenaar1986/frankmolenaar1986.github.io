@@ -62,13 +62,8 @@ $(document).ready(function() {
   });  
 
   $(".menu-button").click(function(e) {
-    if (scrollable) {
-      scrollable = false;
-
-      setTimeout(function(){ 
-        scrollable = true;
-      }, 550);   
-
+    if (scrollable) {   
+      scrollable = false;   
       $(document).off("mousewheel");
       $(document).bind("mousewheel", function(e) {
         e.preventDefault();
@@ -86,6 +81,10 @@ $(document).ready(function() {
       $('html, body').animate({
         scrollTop: $("." + page).offset().top          
       }, 500);
+
+      setTimeout(function(){ 
+        scrollable = true;
+      }, 750); 
 
       setTimeout(function(){ 
         bindMouseWheel();
