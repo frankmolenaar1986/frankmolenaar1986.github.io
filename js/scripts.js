@@ -63,7 +63,7 @@ $(document).ready(function() {
 
   $(".menu-button").click(function(e) {
     if (scrollable) {
-      scrollable = false;
+      scrollable = false;      
 
       $(document).off("mousewheel");
       $(document).bind("mousewheel", function(e) {
@@ -80,13 +80,16 @@ $(document).ready(function() {
       var page = $(this).attr("data-page");
 
       $('html, body').animate({
-          scrollTop: $("." + page).offset().top          
+        scrollTop: $("." + page).offset().top          
       }, 500);
 
       setTimeout(function(){ 
-          bindMouseWheel();
-          scrollable = true
-      }, 500); 
+        scrollable = true;
+      }, 500);  
+
+      setTimeout(function(){ 
+        bindMouseWheel();
+      }, 500);             
     }         
   });
 
