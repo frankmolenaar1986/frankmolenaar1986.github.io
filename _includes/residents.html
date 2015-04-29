@@ -1,57 +1,57 @@
 <!-- Residents inxdex -->
-<div class="resident">
+<div class="resident display-table">
   {% assign cutoffathalf = site.categories.residents | size | divided_by:2 | plus:1 %} 
   {% assign sorted_residents = (site.categories.residents | sort: 'title') %}
   {% assign counter = 1 %}
-  <div class="row">
-    <div class="residents-index">   
-      <div class="col-lg-6 col-md-12">  
-        <ul class="residents-list">
-          {% for post in sorted_residents limit:cutoffathalf  %}
-            {% if post.title != "index" and post.category == "residents" %}
-              <li>
-                <a href="#" data-page="{{counter }}"><span class="krux-bold">{{ post.title }} </span><span class="list-subtitle">{{ post.profession }}</span></a>           
-              </li>
-              {% capture counter %}{{ counter | plus:1 }}{% endcapture %}
-            {% endif %}       
-          {% endfor %}
-        </ul>
-      </div>
-      <div class="col-lg-6 col-md-12">
-        <ul class="residents-list">       
-          {% for post in sorted_residents offset:cutoffathalf %}
-            {% if post.title != "index" and post.category == "residents" %}
-              <li>
-                <a href="#" data-page="{{ counter }}"><span class="krux-bold">{{ post.title }} </span> <span class="list-subtitle">{{ post.profession }}</span></a>
-              </li>
-              {% capture counter %}{{ counter | plus:1 }}{% endcapture %}
-            {% endif %}       
-          {% endfor %}
-        </ul>
-      </div>    
+  <div class="residents-index">   
+    <div class="col-lg-6 col-md-12">  
+      <ul class="residents-list">
+        {% for post in sorted_residents limit:cutoffathalf  %}
+          {% if post.title != "index" and post.category == "residents" %}
+            <li>
+              <a href="#" data-page="{{counter }}"><span class="krux-bold">{{ post.title }} </span><span class="list-subtitle">{{ post.profession }}</span></a>           
+            </li>
+            {% capture counter %}{{ counter | plus:1 }}{% endcapture %}
+          {% endif %}       
+        {% endfor %}
+      </ul>
     </div>
+    <div class="col-lg-6 col-md-12">
+      <ul class="residents-list">       
+        {% for post in sorted_residents offset:cutoffathalf %}
+          {% if post.title != "index" and post.category == "residents" %}
+            <li>
+              <a href="#" data-page="{{ counter }}"><span class="krux-bold">{{ post.title }} </span> <span class="list-subtitle">{{ post.profession }}</span></a>
+            </li>
+            {% capture counter %}{{ counter | plus:1 }}{% endcapture %}
+          {% endif %}       
+        {% endfor %}
+      </ul>
+    </div>    
   </div>
 </div>
 <!-- Residents -->
 {% assign sorted_residents = (site.categories.residents | sort: 'title') %}
 {% for resident in sorted_residents %}
   {% if resident.category == "residents" %}
-    <div class="resident">
-      <div class="resident-content">
-        <h2 class="resident-title"><span class="krux-bold">{{ resident.title }}</span> <span class="krux-light">{{ resident.profession }}</span></h2>                          
-        <img data-lazy="{{ site.baseurl }}{{ resident.image }}" alt="{{ resident.title }}" class="resident-image img-responsive">
-        {% if resident.website %}      
-          <h2 class="resident-link">                 
-            <a href="http://{{resident.website}}" target="blank">{{ resident.website }}</a>
-            {% if resident.website2 %}
-              <span>/</span> <a href="http://{{resident.website2}}" target="blank">{{ resident.website2 }}</a>
-            {% endif %}
-            {% if resident.website3 %}
-              <span>/</span> <a href="http://{{resident.website3}}" target="blank">{{ resident.website3 }}</a>
-            {% endif %} 
-          </h2>            
-        {% endif %}
+    <div style="display: table; height: 100%;">
+      <div class="resident" style="display:table-cell; vertical-align: middle; text-align: center;">      
+        <div class="resident-content">        
+          <h2 class="resident-title"><span class="krux-bold">{{ resident.title }}</span> <span class="krux-light">{{ resident.profession }}</span></h2>                          
+          <img data-lazy="{{ site.baseurl }}{{ resident.image }}" alt="{{ resident.title }}" class="resident-image img-responsive">
+          {% if resident.website %}      
+            <h2 class="resident-link">                 
+              <a href="http://{{resident.website}}" target="blank">{{ resident.website }}</a>
+              {% if resident.website2 %}
+                <span>/</span> <a href="http://{{resident.website2}}" target="blank">{{ resident.website2 }}</a>
+              {% endif %}
+              {% if resident.website3 %}
+                <span>/</span> <a href="http://{{resident.website3}}" target="blank">{{ resident.website3 }}</a>
+              {% endif %} 
+            </h2>            
+          {% endif %}
+        </div>
       </div>
-    </div>  
+    </div>
   {% endif %}
 {% endfor %}

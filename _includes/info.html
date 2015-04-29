@@ -1,7 +1,6 @@
 {% for info in site.posts reversed | sort:order %}
 	{% if info.category == "info" %}                    
-	  <div class="info">
-	      <img src="{{site.baseurl}}{{info.background}}" class="stretch img-responsive" style="height:100%; width:100%;" alt="krux-projects" />
+	  <div class="info" style="background: url({{site.baseurl}}{{info.background}}); background-size: cover;">
 	      {{ info.content }}
 	  </div>  
 	{% endif %}
