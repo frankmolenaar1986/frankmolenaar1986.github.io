@@ -2,31 +2,31 @@ $(document).ready(function() {
   $(".krux-page").each(function(){
     $(this).css( "height", $(window).innerHeight() + "px" );
   });
-
+/*
   $(window).on("resize", function(){
     $(".krux-page").each(function(){
       $(this).css( "height", $(window).innerHeight() + "px" );
     });
   });
-
+*/
   bindMouseWheel();
 
   $('.stretch').attr('draggable', false);
   
   $(".residents").slick({
-    lazyLoad: 'ondemand',
+    
     slidesToShow: 1,
     adaptiveHeight: false      
   });
 
   $(".facilities").slick({
-    lazyLoad: 'ondemand',
+    
     slidesToShow: 1,
     adaptiveHeight: false      
   });
 
   $(".projects").slick({
-    lazyLoad: 'ondemand',
+    
     slidesToShow: 1,
     adaptiveHeight: false      
   });
