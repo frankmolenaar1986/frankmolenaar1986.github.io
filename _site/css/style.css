@@ -418,5 +418,9 @@ div.infos .slick-list, div.infos .slick-list .slick-track,
  .resident-link,
   .resident-image {
   	font-size: 1.5vw;
- 	margin: 0.5vw auto;
+ 	margin: 0.5vw auto; 	
+}
+
+.resident-image {
+	max-height: 35vw;
 }
