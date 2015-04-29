@@ -6,26 +6,17 @@
     <div class="container-fluid krux-container">
       <div class="row">
         <div class="col-md-12 krux-page page-1" data-page="page-1">  
-          <div class="bgImageContainer">
-            <img src="{{site.baseurl}}/images/backgrounds/home/home_02.jpg" class="stretch img-responsive" alt="krux-amsterdam" />
-          </div>
-          <div class="amsterdam">
+          <div class="amsterdam" style="background: url({{site.baseurl}}/images/backgrounds/home/home_02.jpg); background-size:cover; height: 100%">
             {% include home.html %}
           </div>
         </div>
       </div>
       <div class="row">
-        <div class="col-md-12 krux-page page-2" data-page="page-2"> 
-          <div class="bgImageContainer">
-            <img src="{{site.baseurl}}/images/backgrounds/residents/residents_01.jpg" class="stretch img-responsive" alt="krux-residents" />
-            <div class="background-overlay"></div>
-          </div>          
+        <div class="col-md-12 krux-page page-2" data-page="page-2">              
           <div class="fp-controlArrow1 fp-prev residents-prev ">
           </div>
-          <div class="col-md-10 col-md-offset-1">
-            <div class="residents">
-              {% include residents.html %}
-            </div>
+          <div class="residents" style="background: url({{site.baseurl}}/images/backgrounds/residents/residents_01.jpg); background-size:cover; height: 100%">              
+            {% include residents.html %}
           </div>
           <div class="fp-controlArrow1 fp-next">
           </div>
@@ -54,15 +45,16 @@
         </div>
       </div>      
       <div class="row">
-        <div class="col-md-12 krux-page page-5" data-page="page-5">  
-          <div class="bgImageContainer">
-            <img src="{{site.baseurl}}/images/backgrounds/info/info_04.png" class="stretch img-responsive" alt="krux-contact" />
-          </div>          
-          <div class="info">
+        <div class="col-md-12">
+          <div class="fp-controlArrow4 fp-prev projects-prev">
+          </div>
+          <div class="infos from-bottom-left col-md-12 krux-page page-5" style="overflow: hidden;" data-page="page-5">
             {% include info.html %}
+          </div>  
+          <div class="fp-controlArrow4 fp-next projects-next">
           </div>
         </div>
-      </div>
+      </div> 
     </div>
     {% include footer.html %}    
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>

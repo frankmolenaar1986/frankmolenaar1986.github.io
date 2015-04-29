@@ -1,9 +1,7 @@
-<p>
-	krux amsterdam <br />
-	Cruquiusweg 120 A <br />
-	1019 AK Amsterdam <br />
-	The Netherlands<br/>
-	<br/>
-	2015
-
-</p>
+{% for info in site.posts reversed | sort:order %}
+	{% if info.category == "info" %}                    
+	  <div class="info" style="background: url({{site.baseurl}}{{info.background}}); background-size: cover;">
+	      {{ info.content }}
+	  </div>  
+	{% endif %}
+{% endfor %}
