@@ -2,13 +2,13 @@ $(document).ready(function() {
   $(".krux-page").each(function(){
     $(this).css( "height", $(window).innerHeight() + "px" );
   });
-/*
+
   $(window).on("resize", function(){
     $(".krux-page").each(function(){
       $(this).css( "height", $(window).innerHeight() + "px" );
     });
   });
-*/
+  
   bindMouseWheel();
 
   $('.stretch').attr('draggable', false);
