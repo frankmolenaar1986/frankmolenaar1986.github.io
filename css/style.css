@@ -484,7 +484,7 @@ ul.residents-list  {
 #krux-portrait {	
 	background: url("../images/backgrounds/background_smartphone3.png");
 	background-size: cover;
-	background-repeat: repeat;
+	background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
 }
