@@ -127,6 +127,9 @@ $(document).ready(function() {
         default: return; 
     }
     e.preventDefault(); 
+  });
+  $(window).on('beforeunload', function() {
+    $(window).scrollTop(0);
   });              
 }); 
 
