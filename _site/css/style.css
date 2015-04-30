@@ -274,7 +274,7 @@ div.page-content {
 }
 
 .amsterdam p {
-	margin-left: 10%;
+	/*margin-left: 10%;*/
 }
 
 
@@ -429,4 +429,54 @@ div.infos .slick-list, div.infos .slick-list .slick-track,
 .resident-image {
 	cursor: pointer;
 	max-height: 30vw;
+}
+
+
+
+
+
+
+/*SHAPES*/
+
+
+.my-icon {
+    position: relative;
+}
+.my-icon > i {
+    position: absolute;
+    display: inline-block;
+    width: 0;
+    height: 0;
+    line-height: 0;
+    border: 0.4em solid transparent;
+    border-left: 0.4em solid #ffffff;
+    border-top: 0.4em solid #ffffff;
+    left: 0em;
+    top: 0.1em;
+    
+}
+.my-icon > i+i {
+    position: absolute;
+    display: inline-block;
+    width: 0;
+    height: 0;
+    line-height: 0;
+    border: 0.4em solid transparent;
+    border-left: 0.4em solid #ffffff;
+    border-top: 0.4em solid #ffffff;
+    left: 0.8em;
+    top: 0.1em;
+    
+}
+.my-icon > i+i+i {
+    position: absolute;
+    display: inline-block;
+    width: 0;
+    height: 0;
+    line-height: 0;
+    border: 0.4em solid transparent;
+    border-left: 0.4em solid #ffffff;
+    border-top: 0.4em solid #ffffff;
+    left: 1.6em;
+    top: 0.1em;
 }
