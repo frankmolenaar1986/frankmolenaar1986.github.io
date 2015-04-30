@@ -100,11 +100,11 @@ $(document).ready(function() {
   $(document).keydown(function(e) {
     switch(e.which) {
         case 37: // left
-        $(".fp-prev").trigger('mouseenter');
-        $(".fp-prev").trigger("click");
-        setTimeout(function(){ 
-          $(".fp-prev").trigger('mouseleave');
-        }, 500);
+          $(".fp-prev").trigger("mouseenter");
+          $(".fp-prev").trigger("click");
+          setTimeout(function(){ 
+            $(".fp-prev").trigger('mouseleave');
+          }, 1500);
         break;
 
         case 38: // up
@@ -112,11 +112,11 @@ $(document).ready(function() {
         break;
 
         case 39: // right
-        $(".fp-next").trigger('mouseenter');
-        $(".fp-next").trigger("click");
-        setTimeout(function(){ 
-          $(".fp-next").trigger('mouseleave');
-        }, 500);
+          $(".fp-next").trigger('mouseenter');
+          $(".fp-next").trigger("click");
+          setTimeout(function(){ 
+            $(".fp-next").trigger('mouseleave');
+          }, 1500);
         break;
 
         case 40: // down

@@ -1,3 +1,21 @@
+#krux-portrait {
+	display: none;
+}
+
+#krux-screen {
+	display: block;
+}
+
+@media screen and (min-width: 0px) and (max-width: 993px)  {
+    #krux-portrait {
+    	display: block;
+    }
+
+    #krux-screen {
+    	display: none;
+    } 
+}
+
 @font-face {
 	font-family: ReplicaProRegular;
 	src: url("fonts/ReplicaProRegular.otf") format("opentype");
@@ -16,26 +34,9 @@
 }
 
 html {
+	color: white;
 	font-family: "ReplicaProRegular", 'Arial Black', 'Arial Bold', Gadget, sans-serif;
 	font-size: 12px;
-}
-
-@media (max-width: @screen-md) {
-    html {
-    	font-size: 10px;
-    }
-}
-
-@media (max-width: @screen-sm) {
-    html {
-    	font-size: 8px;
-    }
-}
-
-@media (max-width: @screen-xs) {
-    html {
-    	font-size: 6px;
-    }
 }
 
 body {
@@ -467,6 +468,7 @@ ul.residents-list  {
     top: 0.12em;
     
 }
+
 .my-icon > i+i+i {
     position: absolute;
     display: inline-block;
@@ -478,4 +480,44 @@ ul.residents-list  {
     border-top: 0.4em solid #ffffff;
     left: 1.6em;
     top: 0.12em;
+}
+
+/***********************************
+/*** PORTRAIT BACKUP FOR NOW !! ***/
+
+#krux-portrait {	
+	background: url("../images/backgrounds/background_smartphone3.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+#krux-portrait .container {
+	padding-top: 50px;
+	margin-left: 10%;
+	margin-right: 10%;
+	width: 80%;
+	font-size: 6vw;
+	color: white;
+	padding-bottom: 50px;
+	font-weight: bolder;
+}
+
+#krux-portrait .container h2 {
+	margin-top: 40px;
+	font-size: 6vw;
+}
+
+#krux-portrait .container a {
+	text-decoration: underline;
+}
+
+#krux-portrait .container ul {
+	list-style: none;
+	padding-left: 0;
+}
+
+#krux-portrait .container li {
+	line-height: 6.5vw;
 }

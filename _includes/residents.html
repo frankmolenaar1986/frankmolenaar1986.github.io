@@ -34,7 +34,6 @@
   </div>   
 </div>
 <!-- Residents -->
-{% assign sorted_residents = (site.categories.residents | sort: 'title') %}
 {% for resident in sorted_residents %}
   {% if resident.category == "residents" %}
     <div class="resident display-table">  
