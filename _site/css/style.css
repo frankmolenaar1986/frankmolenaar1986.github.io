@@ -273,11 +273,6 @@ div.page-content {
 	margin-left: 80px;
 }
 
-.amsterdam p {
-	/*margin-left: 10%;*/
-}
-
-
 .info p {
 	margin-left: 1.5%;
 }
@@ -402,6 +397,7 @@ div.infos .slick-list, div.infos .slick-list .slick-track,
 }
 
 .residents-list ul {
+	padding-left: 0;
 	margin-bottom: 0;
 }
 

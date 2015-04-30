@@ -100,7 +100,7 @@ $(document).ready(function() {
   $(document).keydown(function(e) {
     switch(e.which) {
         case 37: // left
-        $(".fp-next").trigger("click");
+        $(".fp-prev").trigger("click");
         break;
 
         case 38: // up
