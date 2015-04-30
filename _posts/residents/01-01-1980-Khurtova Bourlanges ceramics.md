@@ -2,7 +2,7 @@
 category: residents
 layout: post
 title: Khurtova / Bourlanges
-profession: visual art
+profession: visual arts
 website: www.marieilsebourlanges.com 
 website2: www.elenakhurtova.com
 image: /images/residents/elenakhurtova_03.png

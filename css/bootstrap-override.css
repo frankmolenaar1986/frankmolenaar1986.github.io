@@ -58,3 +58,13 @@ nav.navbar-default .navbar-nav > li > a:hover {
 	border-radius: 50%;
 	width: 40px;
 }
+
+
+a{
+	color: white;
+  	text-decoration: none;
+}
+
+a:visited {
+	color:white;
+}
