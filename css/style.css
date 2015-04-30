@@ -396,7 +396,7 @@ div.infos .slick-list, div.infos .slick-list .slick-track,
 	vertical-align: middle;
 }
 
-.residents-list ul {
+ul.residents-list  {
 	padding-left: 0;
 	margin-bottom: 0;
 }
