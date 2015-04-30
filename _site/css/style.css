@@ -392,6 +392,7 @@ div.infos .slick-list, div.infos .slick-list .slick-track,
 }
 
 .resident-index {
+	margin-top: 2.5vw;
 	display: table-cell;
 	vertical-align: middle;
 }
