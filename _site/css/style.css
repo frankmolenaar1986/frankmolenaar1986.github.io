@@ -502,11 +502,12 @@ ul.residents-list  {
 	color: white;
 	padding-bottom: 50px;
 	font-weight: bolder;
+	overflow: visible;
 }
 
 #krux-portrait .container h2 {
 	margin-top: 40px;
-	font-size: 6vw;
+	font-size: 6vw;	
 }
 
 #krux-portrait .container a {
