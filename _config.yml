@@ -6,7 +6,6 @@ twitter_username: jekyllrb
 github_username:  jekyll
 
 url: 
-baseurl:	/krux-website 
 
 # Build settings
 markdown: kramdown
