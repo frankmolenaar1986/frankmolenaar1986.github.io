@@ -94,8 +94,20 @@ $(document).ready(function() {
     }         
   });
 
-  $(".resident-image").on("click", function(){
-    $(".fp-next").trigger("click");
+  $("div[data-resident-image-container]").on("click", function(){    
+    var numberOfImages = $(this).attr("data-length");
+    var currentImage = $(this).attr("data-current");
+
+    if (numberOfImages > 1) {
+      $(this).slideToggle();
+      if(numberOfImages != currentImage) {
+        $(this).next("div[data-resident-image-container]").slideToggle();
+      } else {
+        $(this).parent().find("div[data-current='1']").slideToggle();
+        console.log($(this).parent())
+      }
+    }
+    
   });
 
   $(document).keydown(function(e) {
