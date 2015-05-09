@@ -3,6 +3,11 @@ category: residents
 layout: post
 title: Meeus van Dis
 profession: fine arts
-image: /images/residents/meeusvandis_01.png
-webiste: www.facebook.com/pages/Meeus-van-Dis/433019496855242?ref=hl
+website: 
+image:
+- /images/residents/meeusvandis_01.png
+- /images/residents/meeusvandis_02.png
+- /images/residents/meeusvandis_03.png
+- /images/residents/meeusvandis_04.png
+- /images/residents/meeusvandis_05.png
 ---

@@ -9,5 +9,5 @@ image:
 - /images/residents/camilledolibeau_02.png
 - /images/residents/camilledolibeau_03.png
 - /images/residents/camilledolibeau_04.png
-- /images/residents/camilledolibeau_05.png
+
 ---
