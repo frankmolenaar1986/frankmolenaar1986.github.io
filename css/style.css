@@ -1,3 +1,22 @@
+
+#krux-portrait {
+	display: none;
+}
+
+#krux-screen {
+	display: block;
+}
+
+@media screen and (min-width: 0px) and (max-width: 993px)  {
+    #krux-portrait {
+    	display: block;
+    }
+
+    #krux-screen {
+    	display: none;
+    } 
+}
+
 @font-face {
 	font-family: ReplicaProRegular;
 	src: url("fonts/ReplicaProRegular.otf") format("opentype");
@@ -16,26 +35,9 @@
 }
 
 html {
+	color: white;
 	font-family: "ReplicaProRegular", 'Arial Black', 'Arial Bold', Gadget, sans-serif;
 	font-size: 12px;
-}
-
-@media (max-width: @screen-md) {
-    html {
-    	font-size: 10px;
-    }
-}
-
-@media (max-width: @screen-sm) {
-    html {
-    	font-size: 8px;
-    }
-}
-
-@media (max-width: @screen-xs) {
-    html {
-    	font-size: 6px;
-    }
 }
 
 body {
@@ -121,9 +123,9 @@ div.page-content {
   .fp-controlArrow3,
    .fp-controlArrow4 {
 	position: absolute;
-  	top: 49%;
+  	top: 50%;
   	width: 30px;
-  	height: 42px;
+  	height: 40px;
   	cursor: pointer;
  	z-index: 2000;
 }
@@ -270,16 +272,7 @@ div.page-content {
 	word-break: break-word;
 	position: absolute;	
 	width: 50%;
-	margin-left: 80px;
-}
-
-.amsterdam p {
-	/*margin-left: 10%;*/
-}
-
-
-.info p {
-	margin-left: 1.5%;
+	margin-left: 120px;
 }
 
 .amsterdam p,
@@ -397,15 +390,18 @@ div.infos .slick-list, div.infos .slick-list .slick-track,
 }
 
 .resident-index {
+	padding-top: 2.5vw;
 	display: table-cell;
 	vertical-align: middle;
 }
 
-.residents-list ul {
+ul.residents-list  {
+	padding-left: 0;
 	margin-bottom: 0;
 }
 
 .resident-content {
+	padding-top: 3.5vw;
 	display: table-cell;
 	vertical-align: middle;
 	text-align: center;
@@ -415,7 +411,7 @@ div.infos .slick-list, div.infos .slick-list .slick-track,
 }
 
 .resident-content,
- .resident-content a {
+ .resident-content a { 	
 	color: white!important;
 }
 
@@ -428,6 +424,7 @@ div.infos .slick-list, div.infos .slick-list .slick-track,
 
 .resident-image {
 	cursor: pointer;
+	max-width: 100%;
 	max-height: 30vw;
 }
 
@@ -468,6 +465,7 @@ div.infos .slick-list, div.infos .slick-list .slick-track,
     top: 0.12em;
     
 }
+
 .my-icon > i+i+i {
     position: absolute;
     display: inline-block;
@@ -479,4 +477,45 @@ div.infos .slick-list, div.infos .slick-list .slick-track,
     border-top: 0.4em solid #ffffff;
     left: 1.6em;
     top: 0.12em;
+}
+
+/***********************************
+/*** PORTRAIT BACKUP FOR NOW !! ***/
+
+#krux-portrait {	
+	background: url("../images/backgrounds/background_smartphone3.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+#krux-portrait .container {
+	padding-top: 50px;
+	margin-left: 10%;
+	margin-right: 10%;
+	width: 80%;
+	font-size: 6vw;
+	color: white;
+	padding-bottom: 50px;
+	font-weight: bolder;
+	overflow: visible;
+}
+
+#krux-portrait .container h2 {
+	margin-top: 40px;
+	font-size: 6vw;	
+}
+
+#krux-portrait .container a {
+	text-decoration: underline;
+}
+
+#krux-portrait .container ul {
+	list-style: none;
+	padding-left: 0;
+}
+
+#krux-portrait .container li {
+	line-height: 6.5vw;
 }

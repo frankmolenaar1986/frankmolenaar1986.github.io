@@ -1,4 +1,5 @@
 $(document).ready(function() {
+  $(document).scrollTop(0);
   var scrollable = true;
 
   $(".krux-page").each(function(){
@@ -99,8 +100,16 @@ $(document).ready(function() {
 
   $(document).keydown(function(e) {
     switch(e.which) {
+        case 33: // up
+        previousMenuItem();
+        break;
+
+        case 34: // up
+        nextMenuItem();
+        break;
+
         case 37: // left
-        $(".fp-next").trigger("click");
+          $(".fp-prev").trigger("click");
         break;
 
         case 38: // up
@@ -108,7 +117,7 @@ $(document).ready(function() {
         break;
 
         case 39: // right
-        $(".fp-next").trigger("click");
+          $(".fp-next").trigger("click");
         break;
 
         case 40: // down
@@ -118,6 +127,9 @@ $(document).ready(function() {
         default: return; 
     }
     e.preventDefault(); 
+  });
+  $(window).on('beforeunload', function() {
+    $(window).scrollTop(0);
   });              
 }); 
 
