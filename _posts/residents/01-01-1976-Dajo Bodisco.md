@@ -2,6 +2,6 @@
 category: residents
 layout: post
 title: Dajo Bodisco
-profession: 
+profession: communication / art direction
 image: 
 ---
