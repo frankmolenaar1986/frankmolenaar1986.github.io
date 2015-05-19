@@ -314,27 +314,36 @@ h2.resident-link a:visited{
 /* Custom menu css */
 nav.navbar-default .navbar-nav > li.menu-item-1 > a:hover,
 	nav.navbar-default .navbar-nav > li.menu-item-1.active > a  {
-		border-bottom: 5px solid #3221c8;
+		background-color: #3221c8;
+		color:white;
 	}
 
 nav.navbar-default .navbar-nav > li.menu-item-2 > a:hover,
 	nav.navbar-default .navbar-nav > li.menu-item-2.active > a {
-		border-bottom: 5px solid #ff2119;
+		
+		background-color: #ff2119;
+		color:white;
 	}
 
 nav.navbar-default .navbar-nav > li.menu-item-3 > a:hover,
 	nav.navbar-default .navbar-nav > li.menu-item-3.active > a {
-		border-bottom: 5px solid #279375;
+		
+		background-color: #279375;
+		color:white;
 	}
 
 nav.navbar-default .navbar-nav > li.menu-item-4 > a:hover,
 	nav.navbar-default .navbar-nav > li.menu-item-4.active > a {
-		border-bottom: 5px solid #cfd000;
+		
+		background-color: #cfd000;
+		color:white;
 	}
 
 nav.navbar-default .navbar-nav > li.menu-item-5 > a:hover,
 	nav.navbar-default .navbar-nav > li.menu-item-5.active > a {
-		border-bottom: 5px solid #b8c5c5;
+		 
+		background-color: #b8c5c5;
+		color:white;
 	}
 
 nav.navbar-default .navbar-nav > li {
@@ -342,12 +351,12 @@ nav.navbar-default .navbar-nav > li {
 }
 
 nav.navbar-default .navbar-nav > li.active > a {
-	background-color: #3221c8;
-	color: white;
+	background-color: white;
+	color: black;
 }
 
 .navbar-nav a:active {
-    background-color: white;
+    background-color:white;
 }
 
 
