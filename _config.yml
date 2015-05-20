@@ -5,6 +5,9 @@ description: cruquiusweg 120A 1019AK Amsterdam
 twitter_username: jekyllrb
 github_username:  jekyll
 
+url: 
+baseurl:	/krux-website 
+
 # Build settings
 markdown: kramdown
 include: ['_pages']
