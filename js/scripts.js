@@ -107,15 +107,14 @@ $(document).ready(function() {
     var currentImage = $(this).attr("data-current");
 
     if (numberOfImages > 1) {
-      $(this).slideToggle();
-      if(numberOfImages != currentImage) {
-        $(this).next("div[data-resident-image-container]").slideToggle();
-      } else {
-        $(this).parent().find("div[data-current='1']").slideToggle();
-        console.log($(this).parent())
-      }
-    }
-    
+      $(this).fadeOut("fast", function(){
+        if(numberOfImages != currentImage) {
+          $(this).next("div[data-resident-image-container]").fadeIn();
+        } else {
+          $(this).parent().find("div[data-current='1']").fadeIn();
+        }
+      });      
+    }    
   });
 
   $(document).keydown(function(e) {
