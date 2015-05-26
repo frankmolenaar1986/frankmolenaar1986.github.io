@@ -2,8 +2,16 @@ $(document).ready(function() {
   $(document).scrollTop(0);
   var scrollable = true;
 
+  $("#mobile-expand-button").on("click", function() {
+    $("#krux-navbar-mobile").slideToggle(0);
+  });
+
   $(".krux-page").each(function(){
     $(this).css( "height", $(window).innerHeight() + "px" );
+  });
+
+  $(".krux-portrait-page").each(function(){
+    $(this).css( "min-height", $(window).innerHeight() + "px" );
   });
 
   $(window).on("resize", function(){    

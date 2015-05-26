@@ -454,10 +454,10 @@ ul.residents-list  {
     width: 0;
     height: 0;
     line-height: 0;
-    border: 0.9em solid transparent;
-    border-left: 0.9em solid #ffffff;
-    border-top: 0.9em solid #ffffff;
-    left: 0em;
+    border: 3.7vw solid transparent;
+    border-left: 3.7vw solid #ffffff;
+    border-top: 3.7vw solid #ffffff;
+    left: 0vw;
     bottom: 7%;
     
 }
@@ -467,10 +467,10 @@ ul.residents-list  {
     width: 0;
     height: 0;
     line-height: 0;
-    border: 0.9em solid transparent;
-    border-left: 0.9em solid #ffffff;
-    border-top: 0.9em solid #ffffff;
-    left: 1.8em;
+    border: 3.7vw solid transparent;
+    border-left: 3.7vw solid #ffffff;
+    border-top: 3.7vw solid #ffffff;
+    left: 7.5vw;
     bottom: 7%;
     
 }
@@ -481,32 +481,24 @@ ul.residents-list  {
     width: 0;
     height: 0;
     line-height: 0;
-    border: 0.9em solid transparent;
-    border-left: 0.9em solid #ffffff;
-    border-top: 0.9em solid #ffffff;
-    left: 3.6em;
+    border: 3.7vw  solid transparent;
+    border-left: 3.7vw solid #ffffff;
+    border-top: 3.7vw solid #ffffff;
+    left: 15vw;
     bottom: 7%;
+}
+.my-icon.portrait-icon {
+	font-size: 7vw;
 }
 
 /***********************************
 /*** PORTRAIT BACKUP FOR NOW !! ***/
 
-#krux-portrait {	
-	background: url("../images/backgrounds/background_smartphone3.png");
-	background-size: cover;
-	background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-}
-
 #krux-portrait .container {
-	padding-top: 50px;
-	margin-left: 10%;
-	margin-right: 10%;
-	width: 80%;
-	font-size: 6vw;
+	padding-right: 0;
+	padding-left: 0;
+	font-size: 8.5vw;
 	color: white;
-	padding-bottom: 50px;
 	font-weight: bolder;
 	overflow: visible;
 }
@@ -527,4 +519,77 @@ ul.residents-list  {
 
 #krux-portrait .container li {
 	line-height: 6.5vw;
+}
+
+.krux-portrait-page {
+	padding: 7%;
+	display: block;
+	width: 100%;
+}
+
+.krux-portrait-page p {
+	font-size: 7.5vw;
+	margin-bottom: 8.5vw;
+}
+
+.portrait-page-1 {
+	background-color: #3221c8;
+}
+
+.portrait-page-2 {
+	background-color: #279375;
+}
+
+.portrait-page-3 {
+	background-color: #ff2119;
+}
+
+.mobile-menu {
+	height: 50px;
+	width: 100%;
+	background-color: white!important;
+	position:fixed;
+	bottom: 0;
+	min-height: 0px!important;
+	background-color: white;
+}
+
+.mobile-expland-button {
+	border: 0;
+}
+
+.icon-bar {
+	color: black;
+	border-color: black;
+}
+
+#navbar-nav-mobile {
+	width: 100%;
+	position: absolute;
+    bottom: 50px;
+    background-color: white;
+    font-size: 6vw;
+    text-align: center;
+    color: black;
+}
+
+#navbar-nav-mobile {
+	padding: 0;
+	margin: 0;
+}
+
+#navbar-nav-mobile li {
+	padding: 10px;
+}
+
+nav.navbar-default #navbar-nav-mobile.navbar-nav > li {
+	padding: 0;
+	margin: 0;
+}
+
+nav.navbar-default #navbar-nav-mobile.navbar-nav > li > a {
+	line-height: inherit;
+	font-size: inherit;
+	text-decoration: none;
+	padding: 0px 15px;
 }
