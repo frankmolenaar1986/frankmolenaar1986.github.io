@@ -21,6 +21,11 @@ $(document).ready(function() {
     });
   });
 
+  $("[class*='mobile-menu-link']").on("click", function(){
+    $("a").removeClass("mobile-active");
+    $(this).addClass("mobile-active")
+  });
+
   bindMouseWheel();
 
   $('.stretch').attr('draggable', false);

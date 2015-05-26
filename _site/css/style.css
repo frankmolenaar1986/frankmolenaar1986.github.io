@@ -558,9 +558,8 @@ ul.residents-list  {
 	border: 0;
 }
 
-.icon-bar {
-	color: black;
-	border-color: black;
+.navbar-default .navbar-toggle .icon-bar {
+	background-color: black;
 }
 
 #navbar-nav-mobile {
@@ -592,7 +591,22 @@ nav.navbar-default #navbar-nav-mobile.navbar-nav > li > a {
 	font-size: inherit;
 	text-decoration: none;
 	padding: 5px 15px;
-	margin: 5px;
+	margin: 1% 25%;
+}
+
+.mobile-menu-link-1.mobile-active {
+	background-color: #3221c8!important;
+	color: white!important;
+}
+
+.mobile-menu-link-2.mobile-active {
+	background-color: #279375!important;
+	color: white!important;
+}
+
+.mobile-menu-link-3.mobile-active{
+	background-color: #ff2119!important;
+	color: white!important;
 }
 
 .krux-portrait-page ul {
@@ -603,4 +617,17 @@ nav.navbar-default #navbar-nav-mobile.navbar-nav > li > a {
 
 .krux-portrait-page ul li {
 	margin-bottom:5px;
+}
+
+.flip-image-container {
+	position: absolute;
+	bottom: 10px;
+	width: 100%;
+	margin-left: -45px;
+}
+
+.flip-image {
+	margin: 50px auto;
+	display: block;
+	width: 40%;
 }
