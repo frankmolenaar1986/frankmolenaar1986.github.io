@@ -17,6 +17,18 @@
     } 
 }
 
+@media (min-width: 768px) {
+	#krux-portrait .container {
+		width: 100%;
+	}
+
+	.navbar-collapse.collapse {
+		display: auto!important;
+		border-radius: 0px;
+	}
+}
+ 	
+
 @font-face {
 	font-family: ReplicaProRegular;
 	src: url("fonts/ReplicaProRegular.otf") format("opentype");
@@ -629,5 +641,5 @@ nav.navbar-default #navbar-nav-mobile.navbar-nav > li > a {
 .flip-image {
 	margin: 50px auto;
 	display: block;
-	width: 40%;
+	width: 20%;
 }
