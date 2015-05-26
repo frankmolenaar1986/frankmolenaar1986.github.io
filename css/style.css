@@ -591,5 +591,16 @@ nav.navbar-default #navbar-nav-mobile.navbar-nav > li > a {
 	line-height: inherit;
 	font-size: inherit;
 	text-decoration: none;
-	padding: 0px 15px;
+	padding: 5px 15px;
+	margin: 5px;
+}
+
+.krux-portrait-page ul {
+	padding: 25px 0px;
+	line-height: 6.5vw;
+	font-size: 5.5vw;
+}
+
+.krux-portrait-page ul li {
+	margin-bottom:5px;
 }
