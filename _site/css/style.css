@@ -1,4 +1,3 @@
-
 #krux-portrait {
 	display: none;
 }
@@ -7,7 +6,7 @@
 	display: block;
 }
 
-@media screen and (min-width: 0px) and (max-width: 993px)  {
+@media screen and (min-width: 0px) and (max-width: 991px) {
     #krux-portrait {
     	display: block;
     }
@@ -26,8 +25,24 @@
 		display: auto!important;
 		border-radius: 0px;
 	}
+
+	.navbar-toggle {
+		display: block!important;
+		border-radius: 0;
+	}
 }
  	
+@media (min-width: 800px) {
+ 	.flip-image {
+ 		display: none!important;
+ 	}
+ }
+
+@media (orientation: landscape) {
+	.flip-image {
+ 		display: none!important;
+ 	}
+}
 
 @font-face {
 	font-family: ReplicaProRegular;
@@ -326,36 +341,36 @@ h2.resident-link a:visited{
 /* Custom menu css */
 nav.navbar-default .navbar-nav > li.menu-item-1 > a:hover,
 	nav.navbar-default .navbar-nav > li.menu-item-1.active > a  {
-		border-bottom: 5px solid #3221c8;
+		border-bottom: 7px solid #3221c8;
 	}
 
 nav.navbar-default .navbar-nav > li.menu-item-2 > a:hover,
 	nav.navbar-default .navbar-nav > li.menu-item-2.active > a {
-		border-bottom: 5px solid #ff2119;
+		border-bottom: 7px solid #ff2119;
 	}
 
 nav.navbar-default .navbar-nav > li.menu-item-3 > a:hover,
 	nav.navbar-default .navbar-nav > li.menu-item-3.active > a {
-		border-bottom: 5px solid #279375;
+		border-bottom: 7px solid #279375;
 	}
 
 nav.navbar-default .navbar-nav > li.menu-item-4 > a:hover,
 	nav.navbar-default .navbar-nav > li.menu-item-4.active > a {
-		border-bottom: 5px solid #cfd000;
+		border-bottom: 7px solid #cfd000;
 	}
 
 nav.navbar-default .navbar-nav > li.menu-item-5 > a:hover,
 	nav.navbar-default .navbar-nav > li.menu-item-5.active > a {
-		border-bottom: 5px solid #b8c5c5;
+		border-bottom: 7px solid #b8c5c5;
 	}
 
 nav.navbar-default .navbar-nav > li {
-	border-bottom: 5px solid transparent;
+	border-bottom: 7px solid transparent;
 }
 
 nav.navbar-default .navbar-nav > li.active > a {
 	background-color: #3221c8;
-	color: white;
+	color: black;
 }
 
 .navbar-nav a:active {
@@ -457,9 +472,9 @@ ul.residents-list  {
     width: 0;
     height: 0;
     line-height: 0;
-    border: 3.7vw solid transparent;
-    border-left: 3.7vw solid #ffffff;
-    border-top: 3.7vw solid #ffffff;
+    border: 2.5vw solid transparent;
+    border-left: 2.5vw solid #ffffff;
+    border-top: 2.5vw solid #ffffff;
     left: 0vw;
     bottom: 7%;
     
@@ -470,10 +485,10 @@ ul.residents-list  {
     width: 0;
     height: 0;
     line-height: 0;
-    border: 3.7vw solid transparent;
-    border-left: 3.7vw solid #ffffff;
-    border-top: 3.7vw solid #ffffff;
-    left: 7.5vw;
+    border: 2.5vw solid transparent;
+    border-left: 2.5vw solid #ffffff;
+    border-top: 2.5vw solid #ffffff;
+    left: 5vw;
     bottom: 7%;
     
 }
@@ -484,10 +499,10 @@ ul.residents-list  {
     width: 0;
     height: 0;
     line-height: 0;
-    border: 3.7vw  solid transparent;
-    border-left: 3.7vw solid #ffffff;
-    border-top: 3.7vw solid #ffffff;
-    left: 15vw;
+    border: 2.5vw  solid transparent;
+    border-left: 2.5vw solid #ffffff;
+    border-top: 2.5vw solid #ffffff;
+    left: 10vw;
     bottom: 7%;
 }
 .my-icon.portrait-icon {
@@ -521,6 +536,7 @@ ul.residents-list  {
 }
 
 #krux-portrait .container li {
+	font-size: 6.5vw;
 	line-height: 6.5vw;
 }
 
@@ -531,8 +547,12 @@ ul.residents-list  {
 }
 
 .krux-portrait-page p {
-	font-size: 7.5vw;
+	font-size: 6.5vw;
 	margin-bottom: 8.5vw;
+}
+
+.krux-portrait-page p.header {
+	font-size: 7.5vw;
 }
 
 .portrait-page-1 {
@@ -548,6 +568,7 @@ ul.residents-list  {
 }
 
 .mobile-menu {
+	border-radius: 0!important;
 	height: 50px;
 	width: 100%;
 	background-color: white!important;
@@ -582,6 +603,7 @@ ul.residents-list  {
 
 #navbar-nav-mobile li {
 	padding: 10px;
+	width: 100%!important;
 }
 
 nav.navbar-default #navbar-nav-mobile.navbar-nav > li {
@@ -613,7 +635,6 @@ nav.navbar-default #navbar-nav-mobile.navbar-nav > li > a {
 }
 
 .krux-portrait-page ul {
-	padding: 25px 0px;
 	line-height: 6.5vw;
 	font-size: 5.5vw;
 }
@@ -626,7 +647,7 @@ nav.navbar-default #navbar-nav-mobile.navbar-nav > li > a {
 	position: absolute;
 	bottom: 10px;
 	width: 100%;
-	margin-left: -45px;
+	margin-left: -7%;
 }
 
 .flip-image {
