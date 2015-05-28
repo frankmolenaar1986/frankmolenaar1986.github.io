@@ -594,6 +594,7 @@ ul.residents-list  {
 	width: 100%;
 	position: absolute;
     bottom: 50px;
+    top:50px;
     background-color: white;
     font-size: 6vw;
     text-align: center;
@@ -619,7 +620,7 @@ nav.navbar-default #navbar-nav-mobile.navbar-nav > li > a {
 	line-height: inherit;
 	font-size: inherit;
 	text-decoration: none;
-	padding: 15px 15px;
+	padding: 5px 15px;
 	margin: 1% 25%;
 }
 
