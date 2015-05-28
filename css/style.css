@@ -567,6 +567,10 @@ ul.residents-list  {
 	background-color: #ff2119;
 }
 
+.portrait-page-4 {
+	background-color: #cfd000;
+}
+
 .mobile-menu {
 	border-radius: 0!important;
 	height: 50px;
@@ -633,6 +637,17 @@ nav.navbar-default #navbar-nav-mobile.navbar-nav > li > a {
 	background-color: #ff2119!important;
 	color: white!important;
 }
+
+.mobile-menu-link-3.mobile-active{
+	background-color: #cfd000!important;
+	color: white!important;
+}
+
+
+
+
+
+
 
 .krux-portrait-page ul {
 	line-height: 6.5vw;
