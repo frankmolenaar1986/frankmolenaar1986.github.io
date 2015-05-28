@@ -1,7 +1,7 @@
 ---
 category: facilities
 layout: post
-title: screenprinting
+title: screen printing
 background: /images/backgrounds/facilities/facilities_04.png
 ---
 screenprinting workshop
