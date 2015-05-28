@@ -326,36 +326,36 @@ h2.resident-link a:visited{
 /* Custom menu css */
 nav.navbar-default .navbar-nav > li.menu-item-1 > a:hover,
 	nav.navbar-default .navbar-nav > li.menu-item-1.active > a  {
-		border-bottom: 10px solid #3221c8;
+		border-bottom: 7px solid #3221c8;
 	}
 
 nav.navbar-default .navbar-nav > li.menu-item-2 > a:hover,
 	nav.navbar-default .navbar-nav > li.menu-item-2.active > a {
-		border-bottom: 10px solid #ff2119;
+		border-bottom: 7px solid #ff2119;
 	}
 
 nav.navbar-default .navbar-nav > li.menu-item-3 > a:hover,
 	nav.navbar-default .navbar-nav > li.menu-item-3.active > a {
-		border-bottom: 10px solid #279375;
+		border-bottom: 7px solid #279375;
 	}
 
 nav.navbar-default .navbar-nav > li.menu-item-4 > a:hover,
 	nav.navbar-default .navbar-nav > li.menu-item-4.active > a {
-		border-bottom: 10px solid #cfd000;
+		border-bottom: 7px solid #cfd000;
 	}
 
 nav.navbar-default .navbar-nav > li.menu-item-5 > a:hover,
 	nav.navbar-default .navbar-nav > li.menu-item-5.active > a {
-		border-bottom: 10px solid #b8c5c5;
+		border-bottom: 7px solid #b8c5c5;
 	}
 
 nav.navbar-default .navbar-nav > li {
-	border-bottom: 10px solid transparent;
+	border-bottom: 7px solid transparent;
 }
 
 nav.navbar-default .navbar-nav > li.active > a {
 	background-color: #3221c8;
-	color: white;
+	color: black;
 }
 
 .navbar-nav a:active {
