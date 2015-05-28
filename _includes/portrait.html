@@ -81,7 +81,7 @@
 				<i></i>
 			</i>
 		</p>
-		{% assign sorted_projects = (site.categories.projects | sort: 'title') %}
+		<p>
 		<ul>
 			{% for projects in site.posts reversed | sort:order %}
 				{% if project.category == "projects" %}  
@@ -90,6 +90,8 @@
 			{% endfor %} 
 		</ul>
 	</div>
+
+
 
 
 
