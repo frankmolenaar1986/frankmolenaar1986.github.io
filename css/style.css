@@ -457,9 +457,9 @@ ul.residents-list  {
     width: 0;
     height: 0;
     line-height: 0;
-    border: 3.7vw solid transparent;
-    border-left: 3.7vw solid #ffffff;
-    border-top: 3.7vw solid #ffffff;
+    border: 2.5vw solid transparent;
+    border-left: 2.5vw solid #ffffff;
+    border-top: 2.5vw solid #ffffff;
     left: 0vw;
     bottom: 7%;
     
@@ -470,9 +470,9 @@ ul.residents-list  {
     width: 0;
     height: 0;
     line-height: 0;
-    border: 3vw solid transparent;
-    border-left: 3vw solid #ffffff;
-    border-top: 3vw solid #ffffff;
+    border: 2.5vw solid transparent;
+    border-left: 2.5vw solid #ffffff;
+    border-top: 2.5vw solid #ffffff;
     left: 7.5vw;
     bottom: 7%;
     
@@ -484,9 +484,9 @@ ul.residents-list  {
     width: 0;
     height: 0;
     line-height: 0;
-    border: 3.7vw  solid transparent;
-    border-left: 3.7vw solid #ffffff;
-    border-top: 3.7vw solid #ffffff;
+    border: 2.5vw  solid transparent;
+    border-left: 2.5vw solid #ffffff;
+    border-top: 2.5vw solid #ffffff;
     left: 15vw;
     bottom: 7%;
 }
