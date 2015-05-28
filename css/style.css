@@ -470,9 +470,9 @@ ul.residents-list  {
     width: 0;
     height: 0;
     line-height: 0;
-    border: 3.7vw solid transparent;
-    border-left: 3.7vw solid #ffffff;
-    border-top: 3.7vw solid #ffffff;
+    border: 3vw solid transparent;
+    border-left: 3vw solid #ffffff;
+    border-top: 3vw solid #ffffff;
     left: 7.5vw;
     bottom: 7%;
     
