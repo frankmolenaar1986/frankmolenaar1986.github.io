@@ -81,7 +81,7 @@
 				<i></i>
 			</i>
 		</p>
-		{% assign sorted_residents = (site.categories.residents | sort: 'title') %}
+		{% assign sorted_projects = (site.categories.projects | sort: 'title') %}
 		<ul>
 			{% for projects in site.posts reversed | sort:order %}
 				{% if project.category == "projects" %}  
