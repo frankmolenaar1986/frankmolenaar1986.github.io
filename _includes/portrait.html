@@ -1,7 +1,7 @@
 <div class="container">
 	<a name="portait-anchor-page1"></a> 
 	<div class="portrait-page-1 krux-portrait-page">
-		<p>
+		<p class="header">
 			<span class="krux-bold">krux</span><span class="krux-light">amsterdam</span>
 			<i class="my-icon portrait-icon" style="padding-left:5px; padding-bottom:2px">
 				<i></i>
@@ -28,7 +28,7 @@
 
 	<a name="portait-anchor-page2"></a> 
 	<div class="portrait-page-2 krux-portrait-page">	
-		<p>
+		<p class="header">
 			<span class="krux-bold">krux</span><span class="krux-light">facilities</span>
 			<i class="my-icon portrait-icon" style="padding-left:5px; padding-bottom:2px">
 				<i></i>
@@ -43,7 +43,7 @@
 		<ul>
 			{% for facility in site.posts reversed | sort:order %}
 				{% if facility.category == "facilities" %}  
-						<li> {{ facility.title }}</li>
+						<li><a href="{{ facility.background }}">{{ facility.title }}</a></li>
 				{% endif %}
 			{% endfor %} 
 		</ul>  
@@ -51,7 +51,7 @@
 
 	<a name="portait-anchor-page3"></a> 
 	<div class="portrait-page-3 krux-portrait-page">
-		<p>
+		<p class="header">
 			<span class="krux-bold">krux</span><span class="krux-light">residents</span>
 			<i class="my-icon portrait-icon" style="padding-left:5px; padding-bottom:2px">
 				<i></i>
