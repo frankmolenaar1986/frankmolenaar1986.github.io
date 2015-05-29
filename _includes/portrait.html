@@ -43,7 +43,9 @@
 		<ul>
 			{% for facility in site.posts reversed | sort:order %}
 				{% if facility.category == "facilities" %}  
-						<li><a href="{{ facility.background }}">{{ facility.title }}</a></li>
+						<li>
+							<a href="img/pdf/facilities.pdf">{{ facility.title }}</a>
+						</li>
 				{% endif %}
 			{% endfor %} 
 		</ul>  
