@@ -94,9 +94,14 @@
 		<ul>
 			{% for project in site.posts reversed | sort:order %}
 				{% if project.category == "projects" %}  
-						<li><a href="{{ project.background }}">{{ project.title }}</a></li>
+						<li>{{ project.title }}</li>
 				{% endif %}
 			{% endfor %}
+
+						<br>
+						<li>
+							<a href="images/pdf/projects.pdf">photos</a>
+						</li>
 			
 
 		</ul>
