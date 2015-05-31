@@ -41,11 +41,12 @@
 		</p>
 		<p>
 		<ul>
-			{% for facility in site.posts reversed | sort:order %}
-				{% if facility.category == "facilities" %}  
-						<li>
+			<li>
 							<a href="images/pdf/facilities.pdf">photos</a>
 							</li>
+			{% for facility in site.posts reversed | sort:order %}
+				{% if facility.category == "facilities" %}  
+						
 						<li>
 							{{ facility.title }}
 						</li>
