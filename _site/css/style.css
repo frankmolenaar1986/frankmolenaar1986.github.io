@@ -50,19 +50,15 @@
 }
 
 @font-face {
-  font-family: 'ReplicaProBold';
-  src: url('fonts/lineto-replica-bold.eot'); /* IE9 Compat Modes */
-  src: url('fonts/lineto-replica-bold.woff') format('woff'), /* Pretty Modern Browsers */
-       url('fonts/lineto-replica-bold.ttf')  format('truetype'), /* Safari, Android, iOS */
-       url('fonts/lineto-replica-bold.svg') format('svg'); /* Legacy iOS */
+	font-family: ReplicaProBold;
+	font-weight: bold;
+	src: url("fonts/ReplicaProBold.otf") format("opentype");
 }
 
 @font-face {
-  font-family: 'ReplicaProLight';
-  src: url('fonts/lineto-replica-light.eot'); /* IE9 Compat Modes */
-  src: url('fonts/lineto-replica-light.woff') format('woff'), /* Pretty Modern Browsers */
-       url('fonts/lineto-replica-light.ttf')  format('truetype'), /* Safari, Android, iOS */
-       url('fonts/lineto-replica-light.svg') format('svg'); /* Legacy iOS */
+	font-family: ReplicaProLight;
+	font-weight: lighter;
+	src: url("fonts/ReplicaProLight.otf") format("opentype");
 }
 
 html {
