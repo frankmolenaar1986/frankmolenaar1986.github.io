@@ -4,8 +4,6 @@ layout: post
 title: Julia Bendeler
 profession: graphic / concept design
 website: www.juliabendeler.com
-image: 
-
+image:
   - /images/residents/juliabendeler_01.png
-
 ---

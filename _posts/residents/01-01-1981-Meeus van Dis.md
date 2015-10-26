@@ -6,5 +6,4 @@ profession: fine arts
 website: 
 image:
 - /images/residents/meeusvandis_01.png
-
 ---

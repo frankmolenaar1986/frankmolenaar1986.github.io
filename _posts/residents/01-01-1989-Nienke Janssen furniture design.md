@@ -9,6 +9,4 @@ image:
   - /images/residents/nienkejanssen_02.png
   - /images/residents/nienkejanssen_03.png
   - /images/residents/nienkejanssen_04.png
- 
-
- ---
+---

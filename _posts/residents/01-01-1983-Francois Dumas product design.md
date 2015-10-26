@@ -9,5 +9,4 @@ image:
 - /images/residents/francoisdumas_02.png
 - /images/residents/francoisdumas_03.png
 - /images/residents/francoisdumas_04.png
-
 ---

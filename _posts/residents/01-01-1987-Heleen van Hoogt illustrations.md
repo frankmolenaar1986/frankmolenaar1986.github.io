@@ -9,5 +9,4 @@ image:
   - /images/residents/heleenvanderhoogt_02.png
   - /images/residents/heleenvanderhoogt_03.png
   - /images/residents/heleenvanderhoogt_04.png
-
-  ---
+---
