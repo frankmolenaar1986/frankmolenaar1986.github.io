@@ -7,5 +7,4 @@ website: www.misteradam.org
 image:
   - /images/residents/adamoostenbrink_01.png
   - /images/residents/adamoostenbrink_02.png
-
-  ---
+---

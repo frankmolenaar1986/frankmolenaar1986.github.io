@@ -9,5 +9,4 @@ image:
   - /images/residents/bobwaardenburg_01.png
   - /images/residents/bobwaardenburg_02.png
   - /images/residents/bobwaardenburg_03.png
-
 ---

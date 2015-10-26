@@ -2,14 +2,14 @@
 <div class="resident display-table"> 
   <div class="bgImageContainer" style="height:100%">
     <div class="background-overlay" style="height:100%"></div>
-  </div>
-  {% assign cutoffathalf = site.categories.residents | size | divided_by:2 %} 
+  </div>  
   {% assign sorted_residents = (site.categories.residents | sort: 'title') %}
-  {% assign counter = 1 %}
+  {% assign cutoffathalf = sorted_residents | size | divided_by:2 | plus: 1 %} 
+  {% assign counter = 1 %}  
   <div class="resident-index">
     <div class="col-lg-offset-2 col-lg-4 col-md-offset-2 col-md-4">  
       <ul class="residents-list">
-        {% for post in sorted_residents limit:cutoffathalf  %}
+        {% for post in sorted_residents limit:cutoffathalf %}
           {% if post.title != "index" and post.category == "residents" %}
             <li>
               <a href="#" data-page="{{counter }}"><span class="krux-bold">{{ post.title }} </span><span class="list-subtitle">{{ post.profession }}</span></a>           

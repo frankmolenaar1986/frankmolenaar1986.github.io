@@ -1,5 +1,4 @@
 ---
-order: 25
 category: residents
 layout: post
 title: Dennis ter Wal
