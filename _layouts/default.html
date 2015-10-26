@@ -1,60 +1,62 @@
 <!DOCTYPE html>
 <html>
   {% include head.html %}
-  <body>       
-    {% include header.html %}   
-    <div class="container-fluid krux-container">
-      <div class="row">
-        <div class="col-md-12 krux-page page-1" data-page="page-1">  
-          <div class="amsterdam" style="background: url({{site.baseurl}}/images/backgrounds/home/home_02.jpg); background-size:cover; height: 100%">
-            {% include home.html %}
+  <body>  
+    <div id="krux-screen">    
+    {% include header.html %}
+      <div class="container-fluid krux-container">
+        <div class="row">
+          <div class="col-md-12 krux-page page-1" data-page="page-1">  
+            <div class="amsterdam" style="background: url({{site.baseurl}}/images/backgrounds/home/home_10.jpg); background-size:cover; height: 100%">
+              {% include home.html %}
+            </div>
           </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="col-md-12 krux-page page-2" data-page="page-2">              
-          <div class="img-responsive fp-controlArrow1 fp-prev residents-prev ">
-          </div>
-          <div class="residents" style="background: url({{site.baseurl}}/images/backgrounds/residents/residents_02.jpg); background-size:cover; height: 100%">              
-            {% include residents.html %}
-          </div>
-          <div class="img-responsive fp-controlArrow1 fp-next">
-          </div>
-        </div>        
-      </div>
-      <div class="row">
-        <div class="col-md-12">
-          <div class="img-responsive fp-controlArrow2 fp-prev facilities-prev">
-          </div>
-          <div class="facilities from-bottom-left col-md-12 krux-page page-3" data-page="page-3">              
-            {% include facilities.html %}   
-          </div>
-          <div class="img-responsive fp-controlArrow2 fp-next facilities-next">
+        <div class="row">
+          <div class="col-md-12 krux-page page-2" data-page="page-2">              
+            <div class="img-responsive fp-controlArrow1 fp-prev residents-prev ">
+            </div>
+            <div class="residents" style="background: url({{site.baseurl}}/images/backgrounds/residents/residents_01.jpg); background-size:cover; height: 100%">              
+              {% include residents.html %}
+            </div>
+            <div class="img-responsive fp-controlArrow1 fp-next">
+            </div>
+          </div>        
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="img-responsive fp-controlArrow2 fp-prev facilities-prev">
+            </div>
+            <div class="facilities from-bottom-left col-md-12 krux-page page-3" data-page="page-3">              
+              {% include facilities.html %}   
+            </div>
+            <div class="img-responsive fp-controlArrow2 fp-next facilities-next">
+            </div>
           </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="col-md-12">
-          <div class="img-responsive fp-controlArrow3 fp-prev projects-prev">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="img-responsive fp-controlArrow3 fp-prev projects-prev">
+            </div>
+            <div class="projects from-bottom-left col-md-12 krux-page page-4" data-page="page-4">
+              {% include projects.html %}
+            </div>  
+            <div class="img-responsive fp-controlArrow3 fp-next projects-next">
+            </div>
           </div>
-          <div class="projects from-bottom-left col-md-12 krux-page page-4" data-page="page-4">
-            {% include projects.html %}
-          </div>  
-          <div class="img-responsive fp-controlArrow3 fp-next projects-next">
-          </div>
-        </div>
-      </div>      
-      <div class="row">
-        <div class="col-md-12">
-          
-          <div class="infos from-bottom-left col-md-12 krux-page page-5" style="overflow: hidden;" data-page="page-5">
-            {% include info.html %}
-          </div>  
-          
+        </div>      
+        <div class="row">
+          <div class="col-md-12">            
+            <div class="infos from-bottom-left col-md-12 krux-page page-5" style="overflow: hidden;" data-page="page-5">
+              {% include info.html %}
+            </div>           
           </div>
         </div>
       </div> 
     </div>
+    <div id="krux-portrait">
+      {% include portrait.html %}
+    </div>  
     {% include footer.html %}    
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.0/slick.min.js"></script>

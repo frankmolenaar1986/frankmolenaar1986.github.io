@@ -3,7 +3,7 @@
   <div class="bgImageContainer" style="height:100%">
     <div class="background-overlay" style="height:100%"></div>
   </div>
-  {% assign cutoffathalf = site.categories.residents | size | divided_by:2 | plus:1 %} 
+  {% assign cutoffathalf = site.categories.residents | size | divided_by:2 %} 
   {% assign sorted_residents = (site.categories.residents | sort: 'title') %}
   {% assign counter = 1 %}
   <div class="resident-index">
@@ -34,14 +34,30 @@
   </div>   
 </div>
 <!-- Residents -->
-{% assign sorted_residents = (site.categories.residents | sort: 'title') %}
 {% for resident in sorted_residents %}
   {% if resident.category == "residents" %}
     <div class="resident display-table">  
       <div class="row resident-content">
-        <div class="col-md-6 col-md-offset-3">  
+        <div class="col-md-8 col-md-offset-2">  
           <h2 class="resident-title"><span class="krux-bold">{{ resident.title }}</span> <span class="krux-light">{{ resident.profession }}</span></h2>                          
-          <img data-lazy="{{ site.baseurl }}{{ resident.image }}" alt="{{ resident.title }}" class="resident-image">
+          {% for image in resident.image %}
+            <div 
+              data-resident-image-container 
+              data-length="{{forloop.length}}" 
+              data-current="{{forloop.index}}" 
+              {% if forloop.index != 1 %}
+                style="display:none;" 
+              {% endif %}
+              >
+              <img 
+                data-lazy="{{ site.baseurl }}{{ image }}" 
+                alt="{{ resident.title }}-{{ forloop.index}}" 
+                class="resident-image" 
+                
+              />
+              <h2 class="resident-link">{{forloop.index}} / {{forloop.length}}</h2>
+            </div>
+          {%endfor%}
           {% if resident.website %}      
             <h2 class="resident-link">                 
               <a href="http://{{resident.website}}" target="blank">{{ resident.website }}</a>

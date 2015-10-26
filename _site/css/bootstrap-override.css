@@ -1,17 +1,5 @@
 /****************************************************
 /* Navbar */
-.navbar-small {
-	width: 80%;
-	float: left;
-	margin: 5px 10%;
-	background-color:white;
-}
-
-.icon-bar {
-	width: 50%!important;
-	margin: 0 auto;
-}
-
 nav.navbar-default {
 	min-height: 0;
 	margin-bottom: 0;

@@ -1,0 +1,137 @@
+<div class="container">
+	<a name="portait-anchor-page1"></a> 
+	<div class="portrait-page-1 krux-portrait-page">
+		<p class="header">
+			<span class="krux-bold">krux</span><span class="krux-light">amsterdam</span>
+			<i class="my-icon portrait-icon" style="padding-left:5px; padding-bottom:2px">
+				<i></i>
+				<i></i>
+				<i></i>
+			</i>
+		</p>
+		<p>
+			<a href="mailto:info@krux-amsterdam.eu">info@kruxamsterdam.eu</a>
+		</p>
+		<p>
+			+31 20 46 30 846 <br/>
+			+31 6 21 22 48 42
+		</p>
+		<p>
+			cruquiusweg 120a <br/>
+			1019AK amsterdam <br/>
+			the netherlands<br><br>
+
+			<span class="krux-light">for our full website please view on your desktop</span>
+			<br><br>
+		</p>		
+	</div>
+	<a name="portait-anchor-page2"></a> 
+	<div class="portrait-page-2 krux-portrait-page">	
+		<p class="header">
+			<span class="krux-bold">krux</span><span class="krux-light">facilities</span>
+			<i class="my-icon portrait-icon" style="padding-left:5px; padding-bottom:2px">
+				<i></i>
+				<i></i>
+				<i></i>
+			</i>
+		</p>
+		<p>
+			<span class="krux-bold">krux</span><span class="krux-light"> offers a wide range of facilities for our residents to use:</span>
+		</p>
+		<p>
+		<ul>
+
+			{% for facility in site.posts reversed | sort:order %}
+				{% if facility.category == "facilities" %}  
+						
+						<li>
+							{{ facility.title }}
+						</li>
+				{% endif %}
+			{% endfor %} 
+						<br>
+						<li>
+							<a href="images/pdf/facilities.pdf">photos</a>
+						</li>
+						<br>
+						<br>
+
+		</ul>  
+	</div>
+	<a name="portait-anchor-page3"></a> 
+	<div class="portrait-page-3 krux-portrait-page">
+		<p class="header">
+			<span class="krux-bold">krux</span><span class="krux-light">residents</span>
+			<i class="my-icon portrait-icon" style="padding-left:5px; padding-bottom:2px">
+				<i></i>
+				<i></i>
+				<i></i>
+			</i>
+		</p>
+		{% assign sorted_residents = (site.categories.residents | sort: 'title') %}
+		<ul>
+			{% for resident in sorted_residents %}
+		  		{% if resident.category == "residents" %}
+		  			<li>
+		  				<a href="http://{{resident.website}}">{{resident.title}}</a></li>
+		  			</li>
+				{% endif %}
+			{% endfor %}
+		</ul>
+	</div>
+
+	<a name="portait-anchor-page4"></a> 
+	<div class="portrait-page-4 krux-portrait-page">
+		<p class="header">
+			<span class="krux-bold">krux</span><span class="krux-light">projects</span>
+			<i class="my-icon portrait-icon" style="padding-left:5px; padding-bottom:2px">
+				<i></i>
+				<i></i>
+				<i></i>
+			</i>
+		</p>
+		<p>
+			<ul>
+				<li>
+				city council workshop
+				</li>
+				<li>
+				sandberg banquet	
+				</li>
+				<li>
+				chateaux secrets	
+				</li>
+				<li>
+				designer days paris
+				</li>
+				<li>
+				one year birthday 	
+				</li>
+				<li>
+				midi festival
+				</li>	
+				<br/>
+				<li>
+					<a href="images/pdf/projects.pdf">photos</a>
+				</li>
+				<br/>
+				<br/>
+			</ul>
+		</p>
+	</div>
+	<nav class="mobile-menu navbar navbar-default">		
+		<div id="krux-navbar-mobile" class="navbar-collapse" style="display:none;">
+			<ul class="nav navbar-nav" id="navbar-nav-mobile">
+				<li><a href="#portait-anchor-page1" class="mobile-menu-link-1 mobile-active"><span class="krux-bold">krux</span><span class="krux-light">amsterdam</span></a></li>
+				<li><a href="#portait-anchor-page2" class="mobile-menu-link-2"><span class="krux-bold">krux</span><span class="krux-light">facilities</span></a></li>
+				<li><a href="#portait-anchor-page3" class="mobile-menu-link-3"><span class="krux-bold">krux</span><span class="krux-light">residents</span></a></li>
+				<li><a href="#portait-anchor-page4" class="mobile-menu-link-4"><span class="krux-bold">krux</span><span class="krux-light">projects</span></a></li>
+			</ul>
+		</div>
+		<button type="button" class="navbar-small button navbar-toggle mobile-expland-button" id="mobile-expand-button">
+			<span class="icon-bar"></span>
+	    	<span class="icon-bar"></span>
+	    	<span class="icon-bar"></span>
+	    </button>
+	</nav>
+</div>

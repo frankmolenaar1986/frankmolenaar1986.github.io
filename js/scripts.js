@@ -1,8 +1,17 @@
 $(document).ready(function() {
+  $(document).scrollTop(0);
   var scrollable = true;
+
+  $("#mobile-expand-button").on("click", function() {
+    $("#krux-navbar-mobile").slideToggle(0);
+  });
 
   $(".krux-page").each(function(){
     $(this).css( "height", $(window).innerHeight() + "px" );
+  });
+
+  $(".krux-portrait-page").each(function(){
+    $(this).css( "min-height", $(window).innerHeight() + "px" );
   });
 
   $(window).on("resize", function(){    
@@ -10,6 +19,11 @@ $(document).ready(function() {
       $(this).css( "height", $(window).innerHeight() + "px" );
       $(".active:first-child").trigger("click");
     });
+  });
+
+  $("[class*='mobile-menu-link']").on("click", function(){
+    $("a").removeClass("mobile-active");
+    $(this).addClass("mobile-active")
   });
 
   bindMouseWheel();
@@ -93,14 +107,33 @@ $(document).ready(function() {
     }         
   });
 
-  $(".resident-image").on("click", function(){
-    $(".fp-next").trigger("click");
+  $("div[data-resident-image-container]").on("click", function(){    
+    var numberOfImages = $(this).attr("data-length");
+    var currentImage = $(this).attr("data-current");
+
+    if (numberOfImages > 1) {
+      $(this).fadeOut("fast", function(){
+        if(numberOfImages != currentImage) {
+          $(this).next("div[data-resident-image-container]").fadeIn();
+        } else {
+          $(this).parent().find("div[data-current='1']").fadeIn();
+        }
+      });      
+    }    
   });
 
   $(document).keydown(function(e) {
     switch(e.which) {
+        case 33: // up
+        previousMenuItem();
+        break;
+
+        case 34: // up
+        nextMenuItem();
+        break;
+
         case 37: // left
-        $(".fp-next").trigger("click");
+          $(".fp-prev").trigger("click");
         break;
 
         case 38: // up
@@ -108,7 +141,7 @@ $(document).ready(function() {
         break;
 
         case 39: // right
-        $(".fp-next").trigger("click");
+          $(".fp-next").trigger("click");
         break;
 
         case 40: // down
@@ -118,6 +151,9 @@ $(document).ready(function() {
         default: return; 
     }
     e.preventDefault(); 
+  });
+  $(window).on('beforeunload', function() {
+    $(window).scrollTop(0);
   });              
 }); 
 
