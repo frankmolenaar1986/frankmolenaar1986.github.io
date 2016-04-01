@@ -2,7 +2,7 @@
 category: residents
 layout: post
 title: Alonso Vázquez 
-profession: fine arts
+profession: art/sound/design
 website: www.alonsovazquez.net
 image:
   - /images/residents/alonsovazquez_01.png
