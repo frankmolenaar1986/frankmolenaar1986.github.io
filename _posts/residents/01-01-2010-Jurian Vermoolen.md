@@ -4,7 +4,8 @@ layout: post
 title: Jurian Vermoolen
 profession: fine arts / film
 website: www.fooj.nl
-image:
+image: 
+  - /images/residents/jurianvermoolen_01.jpg
 
 
 ---
