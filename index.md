@@ -1,5 +1,5 @@
 ---
 title: amsterdam
 layout: default
-background: "/images/backgrounds/krux_4years.jpg"
+background: "/images/backgrounds/home/krux_4years.jpg"
 ---
