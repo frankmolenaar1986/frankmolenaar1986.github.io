@@ -44,10 +44,7 @@
  	}
 }
 
-@font-face {
-	font-family: ReplicaProRegular;
-	src: url("fonts/ReplicaProRegular.otf") format("opentype");
-}
+
 
 @font-face {
   font-family: 'ReplicaProBold';
@@ -67,12 +64,12 @@
 
 html {
 	color: white;
-	font-family: "ReplicaProRegular", 'Arial Black', 'Arial Bold', Gadget, sans-serif;
+	font-family: 'ReplicaProLight', 'Arial Black', 'Arial Bold', Gadget, sans-serif;
 	font-size: 12px;
 }
 
 body {
-	font-family: "ReplicaProRegular", 'Arial Black', 'Arial Bold', Gadget, sans-serif;
+	font-family: 'ReplicaProLight', 'Arial Black', 'Arial Bold', Gadget, sans-serif;
 	height:100%;
 	letter-spacing: 1px;
 	-webkit-background-size: cover;
